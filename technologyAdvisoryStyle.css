@@ -51,7 +51,7 @@ a svg{
 }
 
 .nav-item a{
-    color: rgb(201, 198, 198) !important;
+    color: #FFFFFF99!important;
 }
 
 .nav-link:hover, .nav-link:focus{
@@ -94,9 +94,89 @@ li.justMedium button{
     
 }
 
-/* media queries */
+ /* HERO */
+
+ h1.text-white{
+     font-size: 54px;
+     font-weight: 600;
+ }
+
+ .body-text{
+    color: #FFFFFF99 !important;
+}
+div p.mt-5{
+    font-size: 17px;
+}
+
+main{
+    position: relative;
+}
+
+.heroPic{
+    background-image: url(./logos\ &\ pictures/Hero\ background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+  
+}
+
+.miniContainer{
+    border-top: 5px solid green;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    width: 350px!important;
+}
+
+.higher{
+    height: 600px;
+}
+
+.miniContainer li a, .miniContainer .nav-link:hover, .miniContainer .nav-link:focus {
+    color: gray!important;
+    border-top: none;
+}
+
+.miniContainer a{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+
+.miniContainer a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: lightgrey;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .miniContainer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* BODY CONTENT */
+
+
+/* MEDIA QUERIES */
 
 @media all and (max-width: 992px) { 
+
+    /* HEADER MEDIA 992*/
 
     .justlarge{
         display: none;
@@ -127,10 +207,35 @@ li.justMedium button{
         font-weight: bold;
         content: ' Talk an expert';
     }
+
+    /* HERO MEDIA 992*/
+
+    h1.text-white{
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .heroPic{
+        height: 150px;
+        width: 96%;
+        top: 370px;
+        left: 2%;
+    }
+
+    .higher{
+        height: 400px;
+    }
+
+    .miniContainer{
+        display: none;
+    }
+    
     
  }
 
  @media all and (max-width: 576px) { 
+
+    /* HEADER MEDIA 576*/
 
     .bar2.container{
         max-width: 100%;
@@ -147,4 +252,20 @@ li.justMedium button{
     .offcanvas-end{
         width: 80%!important;
     }
+
+    /* HERO MEDIA 576*/
+
+    .heroPic{
+        height: 150px;
+        width: 96%;
+        top: 500px;
+        left: 2%;
+    }
+
+    .higher{
+        height: 600px;
+    }
+
+    /* BODY CONTENT MEDIA 576*/
+
  }
