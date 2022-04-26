@@ -169,8 +169,48 @@ main{
     transform-origin: bottom left;
   }
 
+
 /* BODY CONTENT */
 
+.bodyFirst{
+    padding-top: 180px;
+}
+
+.bodyFirst h1{
+    font-size: 52px;
+    color: #023A51;
+}
+
+.bodySecond{
+    background-image: linear-gradient(to bottom, rgb(252, 252, 252, 5), rgb(255, 255, 255))!important;
+}
+
+.bodySecond h1{
+    font-size: 80px;
+}
+
+.testimonial{
+    background-image: url(./logos\ &\ pictures/img-people.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 83em;
+    position: relative;
+}
+.testimonialColor{
+    background-image: url(./logos\ &\ pictures/testimonial-centerpic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115px;
+    width: 115px;
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    transform: translate(-50%);
+    
+}
 
 /* MEDIA QUERIES */
 
@@ -230,6 +270,7 @@ main{
         display: none;
     }
     
+    /* BODY CONTENT MEDIA 992*/
     
  }
 
@@ -267,5 +308,9 @@ main{
     }
 
     /* BODY CONTENT MEDIA 576*/
+
+    .bodyFirst{
+    padding-top: 100px;
+    }
 
  }
