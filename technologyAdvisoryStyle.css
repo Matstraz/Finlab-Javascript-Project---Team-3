@@ -252,6 +252,25 @@ main{
     background-size: cover;
 }
 
+/* FOOTER */
+
+.foot button.btn{
+    height: 60px;
+    width: 270px!important;
+}
+
+.topfoot{
+    background-image: url(./logos\ &\ pictures/Footer\ background\ image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lgrey{
+    color: #FFFFFF99 !important;
+}
+
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 992px) { 
@@ -356,6 +375,20 @@ main{
     .bodyThird ul{
         margin-top: 20px;
     }
+
+     /* FOOTER MEDIA 768*/
+
+     div.row div.ms-4{
+         margin-left: 0px!important;
+     }
+
+     .topfoot h1, .topfoot p{
+         width: 90%!important;
+     }
+
+     .foot .moredist{
+         margin-top: 100px;
+     }
 
  }
 

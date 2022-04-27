@@ -130,15 +130,15 @@
               </select>
             </div>
             <label for="name" class="form-label text-secondary mt-5"><strong>Your Name *</strong></label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
             <div class="d-flex justify-content-between mt-4">
               <div class="sxOne text-secondary">
                 <label for="exampleInputEmail1"><strong>Your Email *</strong></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com" required>
               </div>
               <div class="rxOne text-secondary">
                 <label for="pnumber"><strong>Phone Number *</strong></label>
-                <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)">
+                <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)" required>
               </div>
             </div>
             <div class="mt-4 text-secondary">
@@ -272,7 +272,7 @@
   </div>
 </div>
     <div class="heroPic">
-      <div class="m-auto p-4 miniContainer bg-white" style="width: 30%;">
+      <div class="m-auto p-4 miniContainer bg-white animate__animated animate__fadeInUp" style="width: 30%;">
         <h6 class="border-bottom w-100 pb-4"><strong>Quicklink For More Information</strong></h6>
         <div class="d-flex w-100" ><ul class="nav flex-column w-50">
           <li class="nav-item">
@@ -406,7 +406,7 @@
     <p class="text-center m-auto mt-5 mb-4 pt-2"><strong>Here Are Industry Experts Who Can Help You</strong></p>
     <div class="container pb-5">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-xl-4 animate__animated animate__fadeInUp">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-6 card">
@@ -422,7 +422,7 @@
             </div>
           </div>         
         </div>
-        <div class="col-sm-12 col-md-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-xl-4 animate__animated animate__fadeInUp animate__delay-1s">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-6 card">
@@ -438,7 +438,7 @@
             </div>
           </div>         
         </div>
-        <div class="col-sm-12 col-md-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-xl-4 animate__animated animate__fadeInUp animate__delay-2s">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-6 card">
@@ -460,13 +460,13 @@
   </div>
 </div>
 <!-- BRIDGE -->
-<div class="container-fluid bg-white pt-5 bodyFourth">
+<div class="container-fluid bg-white pt-5 bodyFourth pb-5">
   <h1 class="mt-5 w-75 m-auto text-center"><strong>Need a personalized solution?</strong></h1>
   <p class="mt-3 text-center">We Know The Importance Of Delivering The Best Customer Experience. </p>
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-6 bg-secondary bg-opacity-10">
-        <form action="#" method="post" class="w-75 m-auto">
+        <form action="#" method="post" class="w-75 m-auto animate__animated animate__fadeInUp">
           <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-5">
             <label for="work" class="text-secondary w-25">I'm a/an</label>
             <select class="form-select w-75 border-0 bg-secondary bg-opacity-10" id="work" aria-label="Default select example">
@@ -493,15 +493,15 @@
             </select>
           </div>
           <label for="name" class="form-label text-secondary mt-5"><strong>Your Name *</strong></label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
           <div class="d-flex justify-content-between mt-4">
-            <div class="sxOne text-secondary">
+            <div class="sxOne text-secondary mt-4">
               <label for="exampleInputEmail1"><strong>Your Email *</strong></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com" required>
             </div>
             <div class="rxOne text-secondary mt-4">
               <label for="pnumber"><strong>Phone Number *</strong></label>
-              <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)">
+              <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)" required>
             </div>
           </div>
           <div class="mt-4 text-secondary">
@@ -517,7 +517,7 @@
           <button type="submit" class="btn btn-success btn-bar d-flex align-items-center justify-content-center mt-4 w-100 mb-5">Send Message</button>
         </form>
       </div>
-      <div class="col-6 d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block formpic">
+      <div class="col-6 d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block formpic animate__animated animate__fadeInUp animate__delay-1s">
       </div>
     </div>
   </div>
@@ -526,7 +526,117 @@
 </main>
 <!-- FOOTER -->
 <footer>
-
+  <div class="container-fluid foot">
+    <div class="topfoot">
+    <h1 class="text-white text-center m-auto w-50 mt-5 ">Your Future in Finance Starts Here</h1>
+    <p class="fs-5 text-secondary text-center m-auto w-50 mt-4 lgrey">Learn more about our commercial loan broker training program & join our family of over 700 successful entrepreneurs.</p>
+    <a href="https://themeforest.net/checkout/85642153/create_account?_ga=2.264433036.2045413164.1650731425-429546567.1650019930"><button type="button" class="btn btn-success btn-bar d-flex align-items-center justify-content-center w-25 m-auto mt-4">Get my Free Proposal</button></a>
+    <p class="text-secondary text-center m-auto w-50 mt-3 lgrey small">Or call us now at <span class="text-white">0712 610 33 181</span></p>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12 col-lg-8">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 mt-3">
+              <ul>
+                <li class="mb-2">
+                  <a class=" text-white" href="#"><strong>Follow Us</strong></a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Facebook</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Twitter</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Instagram</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">linkedin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mt-3">
+              <ul>
+                <li class="mb-2">
+                  <a class=" text-white" href="#"><strong>Company</strong></a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Our People</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Blog & Insights</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mt-3">
+              <ul>
+                <li class="mb-2">
+                  <a class="text-white" href="#"><strong>Services</strong></a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Accounting</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Financial</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Investments</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Tax & Audit</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mt-3">
+              <ul>
+                <li class="mb-2">
+                  <a class=" text-white" href="#"><strong>Industries</strong></a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Automotive</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Banking</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Insurance</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lgrey" href="#">Healthcare</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ms-4">
+              <p class="text-secondary mb-0 mt-3 small">Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.</p>
+              <p class="text-secondary mt-0 small">Phone: <span class="lgrey">0712 610 33 181</span> | Mail: <span class="lgrey">info@example.com</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 moredist">
+          <p class="text-secondary mt-3 small">By providing your e-mail address, you are consenting to receive press releases, presentations and other information concerning FinLab.</p>
+          <form action="#" method="post" class="border-bottom d-flex mt-5">
+            <label for="exampleInputEmail1" class="form-label d-none"></label>
+            <input type="email" class="mb-2 form-control bg-transparent border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address" required>
+            <button type="submit" class="p-0 border-0 bg-transparent fs-4 mb-2">
+              <i class="fa-solid fa-circle-arrow-right text-white"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="small container mt-5 pt-5 border-top border-secondary text-center text-secondary">
+      <p>Copyright © 2021 LineThemes. Designed and Developed by <span class="lgrey">LineThemes</span> only on <span class="lgrey">Envato Market.</span></p>
+    </div>
+  </div>
 </footer>
 
 
