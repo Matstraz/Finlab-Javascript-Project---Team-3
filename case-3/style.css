@@ -1,3 +1,10 @@
-.bg-primary{
-  background-color:#023a51 !important;
+.bg-nav{
+  background-color:#023a51;
+
+  background-image: url('/case-3/asset/bg-nav.svg');
+  background-size: cover;
+}
+
+.fs-l_1{
+  font-size: 60px;
 }
