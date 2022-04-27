@@ -1,0 +1,462 @@
+/* GENERAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* HEADER */
+
+/* fixed bar */
+
+body{
+    background-color: rgb(0, 74, 106);
+}
+
+.fixed-top.navbar-light{
+    background-color: rgb(40, 38, 38);
+    height: 54px;
+}
+
+a svg{
+    width: 145px;
+    height: 100%;
+}
+
+.btn-bar{
+    background-color: rgb(111, 174, 16);
+    height: 32px;
+    width: 95px;
+}
+
+/* bar 2 */
+
+.bar2{
+    margin-top: 54px;
+    background-color: rgb(0, 74, 106);
+}
+
+.dropdown-menu li a{
+    color: black !important;
+}
+
+.nav-item a{
+    color: #FFFFFF99!important;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: white !important;
+    border-top: 2px solid white;
+}
+
+.dropdown-item i{
+    color: rgb(111, 174, 16);
+    font-size: 5px;
+}
+
+.d-grid button, .btn-bar.mt-4{
+    background-color: rgb(32, 208, 61);
+    font-size: 18px;
+}
+
+li.justMedium button{
+    background-color:rgb(0, 74, 106);
+}
+
+.justMedium{
+    display: none;
+}
+
+/* modal */
+
+.modal-dialog{
+    width: 600px;
+}
+
+.sxOne, .rxOne{
+    width: 47%;
+}
+
+.offcanvas-end button.btn-close:hover{
+    animation: rotateIn;
+    animation-duration: 0.4s;
+    animation-direction: reverse;
+}
+
+ /* HERO */
+
+ h1.text-white{
+     font-size: 54px;
+     font-weight: 600;
+ }
+
+ .body-text{
+    color: #FFFFFF99 !important;
+}
+div p.mt-5{
+    font-size: 17px;
+}
+
+main{
+    position: relative;
+}
+
+.heroPic{
+    background-image: url(./logos\ &\ pictures/Hero\ background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+}
+
+.miniContainer{
+    border-top: 5px solid green;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    width: 350px!important;
+}
+
+.higher{
+    height: 600px;
+}
+
+.miniContainer li a, .miniContainer .nav-link:hover, .miniContainer .nav-link:focus {
+    color: gray!important;
+    border-top: none;
+}
+
+.miniContainer a{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+
+.miniContainer a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: lightgrey;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .miniContainer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* BODY CONTENT */
+
+/* bodyFirst */
+
+.bodyFirst{
+    padding-top: 180px;
+}
+
+.bodyFirst h1{
+    font-size: 52px;
+    color: #023A51;
+}
+
+/* bodySecond */
+
+.bodySecond{
+    background-image: linear-gradient(to bottom, rgb(249, 249, 249, 5), rgb(255, 255, 255))!important;
+}
+
+.bodySecond h1{
+    font-size: 80px;
+}
+
+.testimonial{
+    background-image: url(./logos\ &\ pictures/img-people.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 83em;
+    position: relative;
+}
+.testimonialColor{
+    background-image: url(./logos\ &\ pictures/testimonial-centerpic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115px;
+    width: 115px;
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    transform: translate(-50%);
+}
+
+/* bodyThird */
+
+.bodyThird{
+    background-image: linear-gradient(to top, rgb(240, 240, 240, 5), rgb(255, 255, 255))!important;
+}
+
+.bodyThird h1{
+    font-size: 54px;
+}
+
+.bodyThird li a, .bodyThird .nav-link:hover, .bodyThird .nav-link:focus{
+    color: gray!important;
+    border-top: none;
+}
+
+.bodyThird .nav-link:hover{
+    color: green!important;
+}
+
+.bodyThird .nav-link:hover i{
+    color: black!important;
+}
+
+.bodyThird .card:hover .card-body{
+  background-color: rgb(23, 193, 23);
+}
+
+/* BRIDGE */
+
+.bodyFourth h1{
+    font-size: 54px;
+}
+
+.formpic{
+    background-image: url(./logos\ &\ pictures/formbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+.foot button.btn{
+    height: 60px;
+    width: 270px!important;
+}
+
+.topfoot{
+    background-image: url(./logos\ &\ pictures/Footer\ background\ image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lgrey{
+    color: #FFFFFF99 !important;
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 992px) { 
+
+    /* HEADER MEDIA 992*/
+
+    .justlarge{
+        display: none;
+    }
+
+    .bar2.container{
+        max-width: 98%;
+    }
+
+    .justMedium{
+        display: initial;
+    }
+
+    div.navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-item a, .accordion-item, .accordion-item button, .nav-link:hover, .nav-link:focus {
+        color: rgb(96, 96, 96) !important;
+    }
+
+    .btn.btn-primary.border-dark{
+        width: 190px;
+    }
+
+    .btn.btn-primary.border-dark::after{
+        font-size: small;
+        font-weight: bold;
+        content: ' Talk an expert';
+    }
+
+    /* HERO MEDIA 992*/
+
+    h1.text-white{
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .heroPic{
+        height: 150px;
+        width: 96%;
+        top: 370px;
+        left: 2%;
+    }
+
+    .higher{
+        height: 400px;
+    }
+
+    .miniContainer{
+        display: none;
+    }
+    
+    /* BODY CONTENT MEDIA 992*/
+    
+    .bodyFirst h1{
+        width: 100%!important;
+        font-size: 32px;
+    }
+
+    .bodySecond h2{
+        width: 85%!important;
+        font-size: 25px;
+    }
+
+    .bodyThird h1{
+        font-size: 33px;
+    }
+ }
+
+ @media all and (max-width: 768px){
+
+     /* BODY CONTENT MEDIA 768*/
+    
+     div.animate__fadeIn{
+         text-align: center;
+         margin-bottom: 35px;
+     }
+
+     .bodySecond h2{
+        width: 100%!important;
+        font-size: 18px;
+    }
+
+    .bodyThird h1{
+        font-size: 25px;
+    }
+
+    .bodyThird .d-flex{
+        flex-direction: column;
+    }
+
+    .bodyThird .nav{
+        width: 100%!important;
+    }
+
+    .bodyThird ul{
+        margin-top: 20px;
+    }
+
+     /* FOOTER MEDIA 768*/
+
+     div.row div.ms-4{
+         margin-left: 0px!important;
+     }
+
+     .topfoot h1, .topfoot p{
+         width: 90%!important;
+     }
+
+     .foot .moredist{
+         margin-top: 100px;
+     }
+
+ }
+
+ @media all and (max-width: 576px) { 
+
+    /* HEADER MEDIA 576*/
+
+    .bar2.container{
+        max-width: 100%;
+    }
+
+    .noSmall{
+        display: none;
+    }
+    
+    .modal-dialog{
+        max-width: 100%;
+    }
+
+    .offcanvas-end{
+        width: 80%!important;
+    }
+
+    /* HERO MEDIA 576*/
+
+    .heroPic{
+        height: 150px;
+        width: 96%;
+        top: 500px;
+        left: 2%;
+    }
+
+    .higher{
+        height: 600px;
+    }
+
+    /* BODY CONTENT MEDIA 576*/
+
+    .bodyFirst{
+    padding-top: 100px;
+    }
+
+    .bodySecond p{
+        width: 100%!important;
+    }
+
+    .bodySecond p{
+        width: 100%!important;
+    }
+
+    /* BRIDGE MEDIA 576*/
+
+    .bodyFourth .d-flex{
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+
+    .bodyFourth button.d-flex {
+        align-items: center!important;
+    }
+
+    .bodyFourth select, .sxOne, .rxOne{
+        width: 100%!important;
+    }
+
+    .bodyFourth h1{
+        font-size: 25px;
+        width: 100%!important;
+    }
+
+ }
