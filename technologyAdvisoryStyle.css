@@ -91,7 +91,6 @@ li.justMedium button{
     animation: rotateIn;
     animation-duration: 0.4s;
     animation-direction: reverse;
-    
 }
 
  /* HERO */
@@ -124,7 +123,6 @@ main{
     position: absolute;
     top: 250px;
     left: 5%;
-  
 }
 
 .miniContainer{
@@ -169,8 +167,9 @@ main{
     transform-origin: bottom left;
   }
 
-
 /* BODY CONTENT */
+
+/* bodyFirst */
 
 .bodyFirst{
     padding-top: 180px;
@@ -181,8 +180,10 @@ main{
     color: #023A51;
 }
 
+/* bodySecond */
+
 .bodySecond{
-    background-image: linear-gradient(to bottom, rgb(252, 252, 252, 5), rgb(255, 255, 255))!important;
+    background-image: linear-gradient(to bottom, rgb(249, 249, 249, 5), rgb(255, 255, 255))!important;
 }
 
 .bodySecond h1{
@@ -209,7 +210,46 @@ main{
     left: 50%;
     top: 42px;
     transform: translate(-50%);
-    
+}
+
+/* bodyThird */
+
+.bodyThird{
+    background-image: linear-gradient(to top, rgb(240, 240, 240, 5), rgb(255, 255, 255))!important;
+}
+
+.bodyThird h1{
+    font-size: 54px;
+}
+
+.bodyThird li a, .bodyThird .nav-link:hover, .bodyThird .nav-link:focus{
+    color: gray!important;
+    border-top: none;
+}
+
+.bodyThird .nav-link:hover{
+    color: green!important;
+}
+
+.bodyThird .nav-link:hover i{
+    color: black!important;
+}
+
+.bodyThird .card:hover .card-body{
+  background-color: rgb(23, 193, 23);
+}
+
+/* bodyFourth */
+
+.bodyFourth h1{
+    font-size: 54px;
+}
+
+.formpic{
+    background-image: url(./logos\ &\ pictures/formbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* MEDIA QUERIES */
@@ -272,6 +312,51 @@ main{
     
     /* BODY CONTENT MEDIA 992*/
     
+    .bodyFirst h1{
+        width: 100%!important;
+        font-size: 32px;
+    }
+
+    .bodySecond h2{
+        width: 85%!important;
+        font-size: 25px;
+    }
+
+    .bodyThird h1{
+        font-size: 33px;
+    }
+ }
+
+ @media all and (max-width: 768px){
+
+     /* BODY CONTENT MEDIA 768*/
+    
+     div.animate__fadeIn{
+         text-align: center;
+         margin-bottom: 35px;
+     }
+
+     .bodySecond h2{
+        width: 100%!important;
+        font-size: 18px;
+    }
+
+    .bodyThird h1{
+        font-size: 25px;
+    }
+
+    .bodyThird .d-flex{
+        flex-direction: column;
+    }
+
+    .bodyThird .nav{
+        width: 100%!important;
+    }
+
+    .bodyThird ul{
+        margin-top: 20px;
+    }
+
  }
 
  @media all and (max-width: 576px) { 
@@ -311,6 +396,32 @@ main{
 
     .bodyFirst{
     padding-top: 100px;
+    }
+
+    .bodySecond p{
+        width: 100%!important;
+    }
+
+    .bodySecond p{
+        width: 100%!important;
+    }
+
+    .bodyFourth .d-flex{
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+
+    .bodyFourth button.d-flex {
+        align-items: center!important;
+    }
+
+    .bodyFourth select, .sxOne, .rxOne{
+        width: 100%!important;
+    }
+
+    .bodyFourth h1{
+        font-size: 25px;
+        width: 100%!important;
     }
 
  }
