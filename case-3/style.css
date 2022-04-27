@@ -8,3 +8,8 @@
 .fs-l_1{
   font-size: 60px;
 }
+
+.bg-blue-trasp{
+  background-color: #023a51 ;
+  opacity: 80%;
+}
