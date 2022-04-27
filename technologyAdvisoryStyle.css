@@ -239,7 +239,7 @@ main{
   background-color: rgb(23, 193, 23);
 }
 
-/* bodyFourth */
+/* BRIDGE */
 
 .bodyFourth h1{
     font-size: 54px;
@@ -405,6 +405,8 @@ main{
     .bodySecond p{
         width: 100%!important;
     }
+
+    /* BRIDGE MEDIA 576*/
 
     .bodyFourth .d-flex{
         flex-direction: column;
