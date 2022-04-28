@@ -2,7 +2,27 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
+
+h1,
+h5,
+p {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
 
 #fixed-navbar {
     background-color: #262626 !important;
@@ -47,7 +67,7 @@ header,
     height: 25px;
 }
 
-.offcanvas {
+.offcanvas p {
     color: #5C667D !important;
 }
 
@@ -58,4 +78,28 @@ header,
 
 .offcanvas-body h3 {
     font-size: 15px;
+}
+
+/*---- body ----*/
+
+.hero {
+    background-color: #023A51;
+}
+
+#ready {
+    color: #2CBC63;
+}
+
+.info {
+    color: #FFFFFF99;
+}
+
+#to-contact {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.card h5 {
+    color: #023A51;
+    font-size: 16px;
 }
