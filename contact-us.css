@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#fixed-navbar {
+    background-color: #262626 !important;
+}
+
+#fixed-navbar a > img {
+    height: 18px;
+}
+
+#fixed-navbar button {
+    background-color: #7AA93C;
+}
+
+header,
+.fin-blue {
+    background-color: #14485D !important;
+}
+
+#nav-1 {
+    margin-top: 56px;
+}
+
+#btn-experts {
+    background-color: #2CBC63;
+}
+
+.border-top {
+    border-color: #3D697B !important;
+}
+
+#nav-2-white a {
+    color: #FFFFFF;
+}
+
+#nav-2 a.dropdown-item {
+    color: #14485D;
+}
+
+#btn-offcanvas span {
+    background-color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+}
+
+.offcanvas {
+    color: #5C667D !important;
+}
+
+.offcanvas .btn-close {
+    background-color: #2CBC63;
+    border-radius: 0;
+}
+
+.offcanvas-body h3 {
+    font-size: 15px;
+}
