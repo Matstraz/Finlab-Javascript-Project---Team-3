@@ -25,9 +25,16 @@ height: 55px;
 }
 
  
+.border-square{
+  border: solid lightgrey 2px;
+  padding: 0px;
+}
 
-
-
+@media screen and (min-width: 1020px)  {
+  .border-square{
+    border: white;
+  }
+}
 
 
 
@@ -54,6 +61,32 @@ li{
   list-style-type: none;
 }
 
+
+
+/* fixed bar */
+
+
+
+.fixed-top.navbar-light{
+  background-color: rgb(40, 38, 38);
+  height: 54px;
+}
+
+.text-lime{
+  color:#73b727 ;
+}
+
+.btn-bar{
+  background-color: rgb(111, 174, 16);
+  height: 32px;
+  width: 95px;
+}
+
+.navbar-bottom{
+  margin-top: 54px;
+}
+
+
 footer{
   background-color: #023a51;
 }
@@ -75,6 +108,18 @@ footer{
 
 .fs-xl-c1{
   font-size: 4rem;
+}
+
+@media all and (max-width: 768px) {
+  .fs-768{
+    font-size: 1.3rem !important;
+  }
+}
+
+@media all (min-width: 1050px) {
+  .fs-768{
+    font-size: 155rem !important;
+  }
 }
 
 .fs-xl-c3{

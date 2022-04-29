@@ -19,7 +19,22 @@
 
 
 <body>
-  <nav class="navbar bg-nav ">
+
+  <nav class="navbar fixed-top navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+          viewBox="0 0 48 48">
+          <title>logo envato</title>
+          <g fill="#73b727" class="nc-icon-wrapper">
+            <path fill="#73b727"
+              d="M38.9,0.3c2.2,1.1,11.1,19.9,3.5,36.4C36.3,49.8,21,49.8,13.2,45.2c-6.6-4-16.7-16.5-5.5-31.8 c0.5-0.6,1.6-0.5,1.4,1.2c-0.2,1.2-1.8,10.2,1.3,14.1c1.4,1.9,1.7,0.6,1.7,0.6s-0.2-13,9.8-22.9C28.3,0.4,37.1-0.6,38.9,0.3z">
+            </path>
+          </g>
+        </svg><i class="text-white">envato</i><i class="text-lime">market</i> </a>
+    </div>
+  </nav>
+
+  <nav class="navbar bg-nav navbar-bottom ">
 
     <!--Sezione navbar logo-->
 
@@ -35,7 +50,7 @@
 
           <!--Sezione navbar left icons-->
 
-          <div class=" d-flex  gap-2 align-baseline justify-content-between d-none d-xl-flex">
+          <div class="gap-2 align-baseline justify-content-between d-none d-xl-flex">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                 class="bi bi-facebook" viewBox="0 0 16 16">
                 <path
@@ -71,7 +86,7 @@
         </div> -->
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal"
+        <button type="button" class="btn btn-success d-none d-md-inline-block rounded-pill" data-bs-toggle="modal"
           data-bs-target="#exampleModal"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="white"
             class="bi bi-chat" viewBox="0 0 16 16">
             <path
@@ -132,7 +147,7 @@
           </div>
         </div>
         <!-------------Fine Modal--------------->
-        <div class="rounded-circle btn btn-light hover-ico">
+        <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-cart"
             viewBox="0 0 16 16">
             <path
@@ -140,7 +155,7 @@
           </svg>
         </div>
 
-        <div class=" rounded-circle btn btn-light">
+        <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
           <a href=""><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-search" viewBox="0 0 16 16">
                 <path
@@ -374,8 +389,8 @@
 
     <div class="container justify-content-center p-5">
       <div class=" d-flex flex-column  align-items-center text-light">
-        <h1 class="fs-l_1">Case Studies</h1>
-        <p class="fs-5">Contact our Toll-Free Number or Send us a Message.</p>
+        <h1 class="fs-1 fw-bold">Case Studies</h1>
+        <p class="fs-6 text-center lgrey">Contact our Toll-Free Number or Send us a Message.</p>
       </div>
     </div>
   </nav>
@@ -386,41 +401,49 @@
   <!--Sezione body top-->
   <main class="">
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-12">
-          <div class="row ">
-            <div class="col-4  border-dark"><a class="text-decoration-none text-black-50  " href="#">
-                Show All</a></div>
-            <div class="col-4"><a class="text-decoration-none text-black-50 " href="#">
-                Cash Flow</a></div>
-            <div class="col-4"><a class="text-decoration-none text-black-50 " href="#">
-                Services</a></div>
-            <div class="col-3"></div>
-            <div class="col-3"><a class="text-decoration-none text-black-50 " href="#">
-                Invoicing</a></div>
-            <div class="col-3"><a class="text-decoration-none text-black-50 " href="#">
-                Crypto</a></div>
-            <div class="col-3"></div>
+      <div class="row ">
+        <div class="col-sm-12 col-lg-8">
+          <div class="row">
+            <div class="col-4 text-center ">
+              <p class="border-square">Show All</p>
+            </div>
+            <div class="col-4 text-center ">
+              <p class="border-square"> Cash Flow </p>
+            </div>
+            <div class="col-4 text-center ">
+              <p class="border-square">Services</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="row">
+            <div class="col-6 text-center ">
+              <p class="border-square">Invoicing</p>
+            </div>
+            <div class="col-6 text-center ">
+              <p class="border-square">Crypto</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!--FINE-->
 
     <!------------------------------------ sezione card --------------------------------------->
 
-    <div class="container d-flex flex-wrap mt-3 mb-5  gap-3 justify-content-center ">
-      <div class="col-12 col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+    <div class="container m-0 ms-0 me-0 d-flex flex-wrap mt-3 mb-5  justify-content-center ">
+      <div class="col-12 col-md-5 col-lg-4 col-xl-5 ">
+        <div class="card m-2 text-white">
           <img src="asset/consulting.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
+          <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-between m-0">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class="w-75">
-                <h5 class="mt-3 fs-2">Consulting Firm Grows Client Roster by 29%</h5>
+                <h5 class="mt-3 fs-768">Consulting Firm Grows Client Roster by 29%</h5>
                 <p class="">Cash Flow</p>
               </div>
-              <div class="d-none">
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+              <div class="d-none d-lg-flex mt-5 ">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
@@ -440,16 +463,16 @@
         </div>
       </div>
 
-      <div class="col-12  col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+      <div class="col-12  col-md-5 col-lg-4 col-xl-5">
+        <div class="card m-2 text-white">
           <img src="asset/managment.jpg" class="card-img" alt="...">
           <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class="w-75">
-                <h5 class="mt-3 fs-2 ">Management Of Foreign Exchange Risk</h5>
+                <h5 class="mt-3  fs-768">Management Of Foreign Exchange Risk</h5>
                 <p class="">Services</p>
               </div>
-              <div class="d-none">
+              <div class="d-none d-lg-flex mt-5">
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -470,16 +493,16 @@
         </div>
       </div>
 
-      <div class="col-12  col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+      <div class="col-12  col-md-5 col-lg-4 col-xl-5">
+        <div class="card m-2 text-white">
           <img src="asset/corporate.jpg" class="card-img" alt="...">
           <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class=" w-75">
-                <h5 class="mt-3 fs-2">Corporate Tax Policy And Incorporation In The EU</h5>
+                <h5 class="mt-3   fs-768">Corporate Tax Policy And Incorporation In The EU</h5>
                 <p class="">Invoicing</p>
               </div>
-              <div class="d-none">
+              <div class="d-none d-lg-flex mt-5">
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -500,16 +523,16 @@
         </div>
       </div>
 
-      <div class="col-12  col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+      <div class="col-12  col-md-5 col-lg-4 col-xl-5">
+        <div class="card m-2 text-white">
           <img src="asset/managing.jpg" class="card-img" alt="...">
           <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class=" w-75">
-                <h5 class="mt-3 fs-2">Managing Cash Flow in a Seasonal Business</h5>
+                <h5 class="mt-3   fs-768">Managing Cash Flow in a Seasonal Business</h5>
                 <p class="">Cash Flow</p>
               </div>
-              <div class="d-none">
+              <div class="d-none d-lg-flex mt-5">
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -531,16 +554,16 @@
       </div>
 
 
-      <div class="col-12  col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+      <div class="col-12  col-md-5 col-lg-4 col-xl-5">
+        <div class="card m-2 text-white">
           <img src="asset/grows.jpg" class="card-img" alt="...">
           <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class=" w-75">
-                <h5 class="mt-3 fs-2">Grows Strategic Accounts by 110% Year-Over-Year</h5>
+                <h5 class="mt-3  fs-768">Grows Strategic Accounts by 110% Year-Over-Year</h5>
                 <p class="">Crypto</p>
               </div>
-              <div class="d-none">
+              <div class="d-none d-lg-flex mt-5 ">
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -562,16 +585,16 @@
       </div>
 
 
-      <div class="col-12  col-md-5 col-lg-3 col-xl-5">
-        <div class="card  text-white">
+      <div class="col-12  col-md-5 col-lg-4 col-xl-5">
+        <div class="card m-2 text-white">
           <img src="asset/global.jpg" class="card-img" alt="...">
           <div class="card-img-overlay bg-blue-trasp d-flex flex-wrap justify-content-around">
             <div class="d-flex flex-wrap justify-content-between  border-2 border-top border-light m-3 ">
               <div class=" w-75">
-                <h5 class="mt-3 fs-2">Global Expansion Strategy Guides Financial Firm</h5>
+                <h5 class="mt-3  fs-768">Global Expansion Strategy Guides Financial Firm</h5>
                 <p class="">Services</p>
               </div>
-              <div class="d-none">
+              <div class="d-none d-lg-flex mt-5">
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
