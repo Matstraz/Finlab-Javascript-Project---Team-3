@@ -80,7 +80,7 @@ header,
     font-size: 15px;
 }
 
-/*---- body ----*/
+/* hero */
 
 .hero {
     background-color: #023A51;
@@ -102,4 +102,49 @@ header,
 .card h5 {
     color: #023A51;
     font-size: 16px;
+}
+
+/* body */
+
+#forms {
+    background-color: #EFF5F7;
+}
+
+#btn-submit {
+    background-color: #2CBC63;
+}
+
+#white p {
+    color: #5C667D;
+    font-size: 18px;
+
+}
+
+#white h1 {
+    color: #023A51;
+}
+
+.cards .card-body span {
+    font-size: 24px;
+    color: #9EA4B1;
+}
+
+.cards .card-body h5 {
+    font-size: 28px;
+    color: #2CBC63;
+}
+
+.cards .card-body p {
+    font-size: 16px;
+    color: #5C667D;
+}
+
+#remb-ph {
+    font-size: 15px;
+    color: #5C667D;
+}
+
+#remb-ph a {
+    text-decoration: none;
+    color: #2CBC63;
 }
