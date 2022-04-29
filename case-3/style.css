@@ -69,7 +69,8 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  
+  margin-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .lgrey{
@@ -93,3 +94,6 @@ footer{
 }
 
 }
+
+/*footer media 425 */
+
