@@ -5,12 +5,11 @@
     font-family: sans-serif;
 }
 
-/* fai diventare tutti i px in rem */
 h1 {
-    font-size: 54px;
+    font-size: 8vh;
 }
 p {
-    font-size: 15px;
+    font-size: 2vh;
 }
 
 a {
@@ -54,35 +53,57 @@ a:hover {
 .txt-white-hero {
     color: #ffffff99;
 }
+.txt-number {
+    color: #9ea4b1;
+}
 .txt-bridge {
     color: #a6bac2;
 }
 .txt-footer {
     color: #5c667d;
 }
+.txt-blue {
+    color: #023A51;
+}
 
 /* font-size */
 .txt-13 {
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 .txt-14 {
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 .txt-15 {
-    font-size: 15px;
+    font-size: 1.0rem;
 }
-.txt-16 {
-    font-size: 16px;
+.txt-18 {
+    font-size: 18px;
 }
+.txt-24 {
+    font-size: 24px;
+}
+.txt-28 {
+    font-size: 28px;
+}
+.txt-54 {
+    font-size: 54px;
+}
+
+
 
 /* navbar 1 */
 .m-nav1 {
     margin-top: 56px;
 }
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: #2CBC63;
+}
+
 
 /* navbar-2 */
-.nav-drop a:focus,
-.nav-drop a:hover {
+.nav-drop a:hover,
+.nav-drop a:focus {
     color: #ffffff;
     border-top: solid 3px #ffffff;
 }
@@ -125,17 +146,35 @@ a:hover {
     background-position: center;
     background-size: contain;
 }
-.a-bridge:hover  {
+.a-bridge:hover,
+.a-bridge:focus {
     color: #ffffff;
 }
 .h-bridge {
     font-size: 60px;
 }
-.p-bridge {
-    font-size: 18px;
-}
 
 /*  footer*/
 footer a:hover {
     color: #5c667d;
+}
+
+@media (min-width: 400px) and (max-width: 992px) {
+    .h-bridge {
+        font-size: 30px !important;
+    }
+
+    .txt-54 {
+        font-size: 24px;
+    }
+
+    /* body cards */
+    
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .b-card-2 {
+        border: none !important;
+        }   
+
 }
