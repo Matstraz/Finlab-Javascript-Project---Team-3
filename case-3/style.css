@@ -116,9 +116,9 @@ footer{
   }
 }
 
-@media all (min-width: 1050px) {
+@media all and (min-width: 1050px) {
   .fs-768{
-    font-size: 155rem !important;
+    font-size: 2rem !important;
   }
 }
 
