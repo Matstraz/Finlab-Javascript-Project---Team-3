@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact-us.css">
+    <title>Finlab</title>
+</head>
+
+<body>
+    <header class="bg-light-blue w-100 p-0 m-0">
+        <!-- navbar fixed -->
+        <nav class="bg-nav-fix navbar fixed-top navbar-light bg-light w-100 px-lg-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img style="height: 18px;" class="mb-2"
+                        src="assets/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg" alt="envato market"></a>
+                <button type="button" class="bg-envato btn-sm btn-success">Buy now</button>
+            </div>
+        </nav>
+        <!-- navbar 1 -->
+        <nav class="navbar bg-nav navbar-bottom m-nav1">
+            <div class="container-lg px-lg-5">
+
+                <div class="container-fluid d-flex justify-content-between mt-3 mb-4">
+                    <!-- left -->
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <a class="navbar-brand" href="#">
+                                    <img src="assets/logo.png" alt="" width="200" height="45">
+                                </a>
+                            </div>
+                            <!-- icons -->
+                            <div class="gap-2 align-baseline justify-content-between d-none d-xl-flex">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF"
+                                        class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <img src="assets/logo-envato-1-white-2.png" alt="logo envato" width="18" height="18"
+                                        viewBox="0 0 16 16">
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF"
+                                        class="bi bi-messenger" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="d-flex gap-3">
+                        <!-- Button trigger modal -->
+                        <button type="button"
+                            class="btn btn-primary rounded-pill px-lg-4 py-lg-2 bg-green btn-modal d-none d-sm-inline-block   "
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                            </svg>
+                            Talk an Experts
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column gap-4">
+                                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                            <option selected>Freelancer/Own business</option>
+                                            <option value="1">Other options</option>
+                                        </select>
+                                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                            <option selected>Call me to Discuss my Questions</option>
+                                            <option value="1">Email me your digital prospectus</option>
+                                            <option value="2">Mail me your full information pack</option>
+                                        </select>
+                                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                            <option selected>Financial Consultant</option>
+                                            <option value="1">Accounting Services</option>
+                                            <option value="2">Tax Services</option>
+                                            <option value="3">Careers</option>
+                                            <option value="4">Request Additional Information</option>
+                                        </select>
+                                        <form action="">
+                                            <label for="name">Your Name*</label>
+                                            <input class="form-control form-control-lg" type="text"
+                                                placeholder="Eg. John Doe" id="name">
+                                            <label for="email">Email*</label>
+                                            <input class="form-control form-control-lg" type="email"
+                                                placeholder="name@company.com" id="email">
+                                            <label for="psw">Phone Number</label>
+                                            <input class="form-control form-control-lg" type="tel"
+                                                placeholder="Full Number (incl.prefix)" id="psw">
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input id="checkbox3" type="checkbox" checked="checked">
+                                                <label for="checkbox3">I agree to receive communications from
+                                                    FinLab.</label>
+                                            </div>
+                                            <button type="button" class="btn-lg">Large button</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                class="bi bi-cart" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                        </div>
+
+                        <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
+                            <a href=""><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <!-----------------------Offcanvas media query-->
+                        <div>
+                            <button class="d-xl-none  btn btn-light rounded-circle" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg></button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Homepage
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><a class="link-dark text-decoration-none" href="">
+                                                                Home 1</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="">
+                                                                Home 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Who WE Are
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><a class="link-dark text-decoration-none" href="#">About
+                                                                Us</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Our
+                                                                Leadership Team</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Why
+                                                                Choose Us</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Our
+                                                                History</a></li>
+                                                        <li><a class="link-dark text-decoration-none"
+                                                                href="#">Careers</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    What We Do
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled ">
+                                                        <li><a class="link-dark text-decoration-none"
+                                                                href="#">Accounting Services</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Audit &
+                                                                Tax Services</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Capital
+                                                                Investments</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Finance &
+                                                                Restructuring</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Financial
+                                                                Consultant</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">Portfolio
+                                                                Management</a></li>
+                                                        <li><a class="link-dark text-decoration-none"
+                                                                href="#">Technology Advisory</a></li>
+                                                        <li><a class="link-dark text-decoration-none" href="#">All
+                                                                Service Page</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Case Studies
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled text-decoration-none ">
+                                                    <li><a class="link-dark text-decoration-none" href="#">Case Grid
+                                                            1</a></li>
+                                                    <li><a class="link-dark text-decoration-none" href="#">Case Grid
+                                                            2</a></li>
+                                                    <li><a class="link-dark text-decoration-none" href="#">Case Grid
+                                                            3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div><a class="text-decoration-none link-dark" href="">Blog & Insights</a> </div>
+                                    <div><a class="text-decoration-none link-dark" href="">Shop</a></div>
+                                    <div><a class="text-decoration-none link-dark" href="">Contact Us</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="border-top border-1"></div>
+
+        <!-- navbar 2 -->
+        <div class="container-lg d-none d-lg-flex nav-2">
+            <nav class="navbar-light container-fluid d-flex justify-content-between px-lg-4 pb-lg-3">
+                <!-- offcanvas -->
+                <div class="ms-lg-4">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="bg-green btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div
+                            class="container offcanvas-body d-flex flex-column justify-content-start align-items-centre mx-lg-3">
+                            <img src="assets/c4.jpg" alt="builgings" class="container mx-lg-1 mb-lg-5">
+                            <p class="container">Our firm provides the expert support organisations need to thrive in a
+                                fast-changing world.</p>
+                            <p class="container"><strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York 11226
+                                United States.</p>
+                            <p class="container"><strong>Phone:</strong><a href="#"> 0712 610 33 181</a></p>
+                            <p class="container"><strong>Mail:</strong><a href="#"> info@example.com</a></p>
+                            <form class="container d-flex flex-column mt-lg-5">
+                                <h3 class="mt-lg-5">Request a callback</h3>
+                                <div>
+                                    <label for="name" class="form-label text-secondary"></label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Your Name *">
+                                </div>
+                                <div class="mb-lg-4">
+                                    <label for="telnumber" class="form-label text-secondary"></label>
+                                    <input type="tel" class="form-control" id="telnumber" name="telnumber"
+                                        placeholder="Phone Number *">
+                                </div>
+                                <button type="submit" class="bg-green btn btn-success w-100 m-auto">Request a Callback</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- dropdown -->
+
+                <ul class="nav-drop nav justify-content-between w-100 me-lg-4 align-items-center p-0 ">
+                    <li>
+                        <button id="btn-offcanvas"
+                            class="btn btn-primary bg-light-blue border-0 text-black rounded-circle border-dark justlarge p-2 pt-3"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <span class="p-2 bg-white rounded-circle"><span
+                                    class="navbar-toggler-icon rounded-circle bg-white p-2"></span></span>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown pt-3">
+                        <a class="txt-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Homepage
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Home 1</a></li>
+                            <li><a class="dropdown-item" href="#">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pt-3">
+                        <a class="txt-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Are
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Our Leadership team</a></li>
+                            <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                            <li><a class="dropdown-item" href="#">Our Histoey</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pt-3">
+                        <a class="txt-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            What We Do
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Accounting Services</a></li>
+                            <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
+                            <li><a class="dropdown-item" href="#">Capital Investments</a></li>
+                            <li><a class="dropdown-item" href="#">Finance & Restructoring</a></li>
+                            <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+                            <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+                            <li><a class="dropdown-item" href="#">All Services Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pt-3">
+                        <a class="txt-white nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Case Studies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Case Grid 1</a></li>
+                            <li><a class="dropdown-item" href="#">Case Grid 2</a></li>
+                            <li><a class="dropdown-item" href="#">Case Grid 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pt-3">
+                        <a class="txt-white nav-link" href="#">Blog & Insights</a>
+                    </li>
+                    <li class="nav-item pt-3">
+                        <a class="txt-white nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item pt-3">
+                        <a class="txt-white nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- hero -->
+    <div class="bg-blue hero">
+        <div class="container-lg p-lg-0 pb-sm-5">
+            <div class="container-fluid px-lg-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 m-lg-3 mt-lg-5">
+                        <div class="d-flex align-items-center mt-md-5 mt-sm-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#2CBC63"
+                                class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
+                            <p class="txt-green ms-3 mb-0 txt-14">READY TO GET STARTED?</p>
+                        </div>
+                        <h1 class="txt-54 txt-big txt-white mb-lg-4 my-sm-3"><strong>Have Questions? Contact Us To Learn
+                                More</strong></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 ms-lg-3">
+                        <div class="border-top border-1 mb-lg-3 pt-sm-3"></div>
+                        <h5 class="txt-white txt-15"><strong>Address</strong></h5>
+                        <p class="txt-white-hero txt-15">
+                            541 Melville Ave, Palo Alto,<br>
+                            CA 94301,<br>
+                            United States
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ms-lg-3">
+                        <div class="border-top border-1 mb-lg-3 pt-sm-3"></div>
+                        <h5 class="txt-white txt-15"><strong>Contact info</strong></h5>
+                        <p class="txt-white-hero txt-15">
+                            Phone: +1.809.120.4590 <br>
+                            Email: info@example.com <br>
+                            M – F: 6 am to 8 pm EST
+                        </p>
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="col-lg-3 m-lgt-5 d-flex my-sm-3 btn-hero">
+                        <button type="button" class="bg-green btn btn-success align-middle rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+                        <span class="txt-white ms-3 mt-2">Go to contact form</span>
+                    </div>
+                </div>
+            </div>
+            <!-- cards hero -->
+            <div class="container-lg">
+                <div class="row px-lg-4 mt-lg-5 pb-lg-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+                        <div class="card mb-lg-3 mt-lg-4 m-sm-auto m-sm-5">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="card-body" style="min-height: 155px;">
+                                        <h5 class="card-title"><strong>Explore Our Company</strong></h5>
+                                        <div class="align-self-end">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-up-right mt-5"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-card-1 col-6"></div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+                        <div class="card mb-lg-3 mt-lg-4 m-sm-auto">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="card-body" style="min-height: 155px;">
+                                        <h5 class="card-title"><strong>Core Value We Provide</strong></h5>
+                                        <div class="align-self-end">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-up-right mt-5"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-card-2 col-6"></div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-md-3 mb-md-5">
+                        <div class="card mb-lg-3 mt-lg-4 m-sm-auto">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="card-body" style="min-height: 155px;">
+                                        <h5 class="card-title"><strong>Core Value We Provide</strong></h5>
+                                        <div class="align-self-end">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-up-right mt-5"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-card-3 col-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <main class="w-100" style="overflow: hidden;">
+        <div class="container-lg m-sm-0 p-sm-0 m-lg-auto w-100">
+            <div class="container-fluid pb-sm-5 m-sm-0 p-sm-0 justify-content-center w-100">
+                <!-- form body -->
+                <div class="row mt-lg-5 m-sm-0 p-sm-0 py-lg-4 m-lg-auto">
+                    <div class="bg-gray col-sm-12 col-lg-6">
+                        <form action="#" method="post" class="px-5">
+                            <div class="d-flex justify-content-between align-items-center border-bottom border-1 mt-4">
+                                <label for="select-1">I'm a/an</label>
+                                <select id="select-1" class="form-select w-75 border-0 bg-transparent"
+                                    aria-label="Default select example">
+                                    <option selected>Freelancer/Own Business</option>
+                                    <option value="1">Other options</option>
+                                </select>
+                            </div>
+                        </form>
+                        <form action="#" method="post" class="px-5">
+                            <div class="d-flex justify-content-between align-items-center border-bottom border-1 mt-4">
+                                <label for="select-2">I want</label>
+                                <select id="select-2" class="form-select w-75 border-0 bg-transparent"
+                                    aria-label="Default select example">
+                                    <option selected>Call me to Discuss my Question</option>
+                                    <option value="1">Email me your digital prospectus</option>
+                                    <option value="2">Mail me your full information pack</option>
+                                </select>
+                            </div>
+                        </form>
+                        <form action="#" method="post" class="px-5 py-3">
+                            <div class="d-flex justify-content-between align-items-center border-bottom border-1 mt-3">
+                                <label for="select-3">I interested</label>
+                                <select id="select-3" class="form-select w-75 border-0 bg-transparent"
+                                    aria-label="Default select example">
+                                    <option selected>Financial Consultant</option>
+                                    <option value="1">Accounting Services</option>
+                                    <option value="2">Tax Services</option>
+                                    <option value="3">Careers</option>
+                                    <option value="3">Request Additional Information</option>
+                                </select>
+                            </div>
+                            <div class="mt-5">
+                                <label for="name" class="mb-2"><strong>Your Name *</strong></label>
+                                <input id="name" class="form-control" type="text" placeholder="Eg: John Doe" required>
+                            </div>
+                            <div class="d-flex">
+                                <div class="w-50 mt-3 pe-2">
+                                    <label for="mail"><strong>Your Email *</strong></label>
+                                    <input id="mail" type="email" class="form-control" placeholder="name@company.com"
+                                        required>
+                                </div>
+                                <div class="w-50 mt-3 ps-2">
+                                    <label for="phone"><strong>Phone Number</strong></label>
+                                    <input id="phone" type="tel" class="form-control"
+                                        placeholder="Full Number (incl. prefix)">
+                                </div>
+                            </div>
+                            <div class="mb-2 mt-3">
+                                <label for="mex" class="form-label"><strong>Message</strong></label>
+                                <textarea class="form-control" id="mex" rows="3"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked
+                                    required>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    I agree to receive communications from FinLab.
+                                </label>
+                            </div>
+                            <div class="w-100">
+                                <button id="btn-submit" type="submit" class="btn btn-success w-100 mt-3"><strong>Send
+                                        Message</strong></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pic-form col-sm-6 col-lg-6 d-none d-lg-inline-block"></div>
+                </div>
+                <!-- body cards -->
+                <div class="d-flex flex-column justify-content-center align-items-center mt-lg-5">
+                    <h2 class="w-lg-75 px-lg-5 text-center txt-blue txt-54 mb-sm-4 mt-sm-5"><strong>Why choose us to be
+                            your financial advisors?</strong></h1>
+                        <p class="my-lg-3 txt-footer mb-sm-0 box-cards txt-16">We help you to secure a stable and
+                            fulfilling financial future</p>
+                </div>
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card border-0">
+                                <div
+                                    class="card-body w-100 d-sm-flex flex-column align-items-center d-lg-inline-block body-2">
+                                    <span class="txt-24 txt-number">01.</span>
+                                    <h5 class="card-title txt-green txt-28 my-sm-3"><strong>Experienced.</strong></h5>
+                                    <p class="card-text txt-16 txt-footer py-sm-2 box-cards text-center">At FinLab, Our
+                                        team of advisers are experts in their field, experienced as proven by their
+                                        qualifications and industry recognition.</p>
+                                    <svg class="my-sm-4" xmlns="http://www.w3.org/2000/svg" height="64" width="64"
+                                        viewBox="0 0 64 64">
+                                        <title>books</title>
+                                        <g fill="#023a51" class="nc-icon-wrapper">
+                                            <path fill="#2cbc63"
+                                                d="M18,43V5c0-0.553-0.448-1-1-1H3C2.448,4,2,4.447,2,5v38H18z M9,16c0-0.553,0.448-1,1-1s1,0.447,1,1v12 c0,0.553-0.448,1-1,1s-1-0.447-1-1V16z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M2,45v16c0,0.553,0.448,1,1,1h14c0.552,0,1-0.447,1-1V45H2z"></path>
+                                            <path fill="#2cbc63"
+                                                d="M37,43V5c0-0.553-0.448-1-1-1H22c-0.552,0-1,0.447-1,1v38H37z M28,16c0-0.553,0.448-1,1-1s1,0.447,1,1v12 c0,0.553-0.448,1-1,1s-1-0.447-1-1V16z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M21,45v16c0,0.553,0.448,1,1,1h14c0.552,0,1-0.447,1-1V45H21z"></path>
+                                            <path fill="#2cbc63"
+                                                d="M57.941,40.48L50.728,3.171c-0.05-0.261-0.202-0.49-0.422-0.639c-0.22-0.149-0.491-0.206-0.75-0.153 L35.81,5.037c-0.542,0.104-0.896,0.629-0.792,1.171l7.214,37.31L57.941,40.48z M44.771,14.508c0.539-0.11,1.066,0.249,1.172,0.792 l2.278,11.782c0.104,0.542-0.25,1.066-0.792,1.171c-0.064,0.013-0.128,0.019-0.191,0.019c-0.47,0-0.888-0.332-0.981-0.811 l-2.278-11.782C43.875,15.137,44.229,14.612,44.771,14.508z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M42.611,45.481l3.037,15.709C45.741,61.668,46.16,62,46.629,62 c0.063,0,0.126-0.006,0.191-0.019l13.746-2.657c0.26-0.05,0.49-0.202,0.639-0.422s0.204-0.489,0.153-0.749l-3.037-15.71 L42.611,45.481z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="d-lg-none d-md-none">
+                        <div class="col-lg-4 col-md-6 col-sm-12 border-start border-end border-xs">
+                            <div class="card border-0 body-2">
+                                <div
+                                    class="card-body w-100 d-sm-flex flex-column align-items-center d-lg-inline-block body-2">
+                                    <span class="txt-24 txt-number">02.</span>
+                                    <h5 class="card-title txt-green txt-28 my-sm-3"><strong>Indipendent.</strong></h5>
+                                    <p class="card-text txt-16 txt-footer py-sm-2 box-cards text-center">We can
+                                        recommend products from the whole market. You will therefore receive a financial
+                                        plan and recommendations that are completely bespoke.</p>
+                                    <svg class="my-sm-4" xmlns="http://www.w3.org/2000/svg" height="64" width="64"
+                                        viewBox="0 0 64 64">
+                                        <title>certificate</title>
+                                        <g fill="#023a51" class="nc-icon-wrapper">
+                                            <path fill="#2cbc63"
+                                                d="M36,25c0-0.553-0.448-1-1-1H13c-0.552,0-1,0.447-1,1s0.448,1,1,1h22C35.552,26,36,25.553,36,25z">
+                                            </path>
+                                            <path fill="#2cbc63"
+                                                d="M29,32H13c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S29.552,32,29,32z">
+                                            </path>
+                                            <path fill="#2cbc63"
+                                                d="M29,40H13c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S29.552,40,29,40z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M42,49.667V62c0,0.356,0.189,0.686,0.498,0.865c0.309,0.179,0.689,0.181,0.998,0.003 L50,59.152l6.504,3.716C56.657,62.956,56.829,63,57,63c0.174,0,0.347-0.045,0.502-0.135C57.811,62.686,58,62.356,58,62V49.667 C55.681,51.136,52.943,52,50,52S44.319,51.136,42,49.667z">
+                                            </path>
+                                            <path fill="#2cbc63"
+                                                d="M5,15h49v7.558c1.431,0.397,2.774,0.999,4,1.776V12c0-0.552-0.448-1-1-1H2c-0.552,0-1,0.448-1,1v42 c0,0.552,0.448,1,1,1h38v-4H5V15z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M50,24c-7.168,0-13,5.832-13,13s5.832,13,13,13s13-5.832,13-13S57.168,24,50,24z">
+                                            </path>
+                                            <path data-color="color-2"
+                                                d="M29,3.191L37.977,9h3.683L29.543,1.16c-0.331-0.213-0.756-0.213-1.087,0L16.34,9h3.683 L29,3.191z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="d-lg-none d-md-none">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card border-0">
+                                <div
+                                    class="card-body w-100 d-sm-flex flex-column align-items-center d-lg-inline-block body-2">
+                                    <span class="txt-24 txt-number">03.</span>
+                                    <h5 class="card-title txt-green txt-28 my-sm-3"><strong>Support.</strong></h5>
+                                    <p class="card-text txt-16 txt-footer py-sm-2 box-cards text-center">At FinLab, We
+                                        respond to all inquiries within 24 hours and are eager to address questions,
+                                        provide financial advice, and more.</p>
+                                    <svg class="my-sm-4" xmlns="http://www.w3.org/2000/svg" height="64" width="64"
+                                        viewBox="0 0 64 64">
+                                        <title>privacy policy</title>
+                                        <g fill="#023a51" class="nc-icon-wrapper">
+                                            <circle cx="11.5" cy="14.5" r="6.5" fill="#2cbc63"></circle>
+                                            <circle cx="52.5" cy="14.5" r="6.5" data-color="color-2"></circle>
+                                            <path
+                                                d="M30.642,39.288a25.246,25.246,0,0,1-8.748-7.857C19.146,27.777,16.305,24,10,24a9.01,9.01,0,0,0-9,9V56a1,1,0,0,0,1,1H18a1,1,0,0,0,1-1V37.225a39.746,39.746,0,0,0,9.251,6.429A2.644,2.644,0,0,0,29.5,44a2.493,2.493,0,0,0,1.142-4.712Z"
+                                                fill="#2cbc63"></path>
+                                            <path
+                                                d="M54,24c-6.3,0-9.146,3.777-11.894,7.431a26.012,26.012,0,0,1-7.839,7.343A5.443,5.443,0,0,1,34.4,43.99c.034,0,.067.01.1.01a2.644,2.644,0,0,0,1.249-.346A39.746,39.746,0,0,0,45,37.225V56a1,1,0,0,0,1,1H62a1,1,0,0,0,1-1V33A9.01,9.01,0,0,0,54,24Z"
+                                                data-color="color-2"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="pb-sm-5 txt-footer px-sm-5 card.contact box-cards txt-16">Remember that our team is always
+                        just a phone call away. Toll Free:<a href=""> <strong class="txt-green">0712 610 33
+                                181</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- bridge -->
+    <div class="bg-blue bridge  ">
+        <div class="container-lg">
+            <div class="bg-blue bg-bridge container-fluid text-center py-lg-5 pt-sm-5">
+                <h1 class="h-bridge w-md-50 w-sm-100 m-auto txt-white p-lg-4 pb-sm-3 pt-sm-5">Your Future in Finance
+                    Starts Here</h1>
+                <div class="container d-flex justify-content-center">
+                    <p class="txt-bridge txt-18 w-md-50 w-sm-100 px-lg-5 mx-lg-5 mb-lg-4">Learn more about our
+                        commercial loan broker training program & join our family of over 700 successful entrepreneurs.
+                    </p>
+                </div>
+                <button type="button"
+                    class="bg-green btn btn-success py-lg-3 px-lg-5 mb-lg-4 my-sm-3 btn-bridge"><strong>Get My Free
+                        Proposal</strong></button>
+                <p class="txt-18 txt-bridge m-0 pb-3 pb-sm-5">Or call us now at <a href="#"
+                        class="a-bridge txt-white"><strong>0712 610 33 181</strong></a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-blue">
+        <div class="container-lg pt-md-5">
+            <div class="row pb-lg-5 mb-sm-5">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="row footer">
+                        <div class="col-md-3 col-sm-6 xs-50">
+                            <ul>
+                                <li class="list-unstyled py-2"><a href="#" class="txt-white txt-16"><strong>Follow
+                                            Us</strong></a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Facebook</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Twitter</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Instagram</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 xs-50">
+                            <ul>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="txt-white txt-16"><strong>Company</strong></a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">About Us</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Our People</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Blog & Insights</a>
+                                </li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 xs-50">
+                            <ul>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="txt-white txt-16"><strong>Services</strong></a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Accounting</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Financial</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Investments</a>
+                                </li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Tax & Audit</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 xs-50">
+                            <ul>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="txt-white txt-16"><strong>Industries</strong></a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Automotive</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Banking</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Insurance</a></li>
+                                <li class="list-unstyled py-1"><a href="#" class="txt-bridge txt-15">Healtcare</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="col-lg-12 ms-lg-2 mt-lg-0 my-sm-5">
+                                <p class="txt-14 txt-footer mb-0">Address: 1270 Beverley Rd Brooklyn, New York 11226
+                                    United States.</p>
+                                <p class="txt-14 txt-footer mb-0">Phone: <a href="#" class="txt-bridge"><strong>0712 610
+                                            33 181</strong></a> | Mail: <a href="#"
+                                        class="txt-bridge"><strong>info@example.com</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <p class="txt-footer txt-14 ms-lg-0 ms-sm-4 mt-md-2 mt-sm-5 m-xs">By providing your e-mail address,
+                        you are consenting to receive press releases, presentations and other information concerning
+                        FinLab.</p>
+                    <div class="w-100 mt-3 pe-2">
+                        <div class="d-flex align-items-centre border-bottom border-3 pb-lg-1 footer-mail">
+                            <input id="mail" type="email" class="bg-blue form-control border-0 pt-sm-5"
+                                placeholder="Your email address" required>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#a69caa"
+                                class="bi bi-arrow-right-circle align-self-center" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="txt-footer txt-13 text-center py-lg-5 mb-0 py-sm-5 copyright">Copyright © 2021 LineThemes.
+                Designed and Developed by <a href="#" class="txt-bridge"><strong>LineThemes</strong></a> only on <a
+                    href="#" class="txt-bridge"><strong>Envato Market</strong>. </a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
