@@ -1,0 +1,85 @@
+
+
+html {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: "Manrope";
+    line-height: 1.1;
+}
+
+.bg-color-blue {
+    background-color: #1a4e64 !important;
+
+
+}
+
+.text{
+    padding-right: 5em;
+}
+
+
+.col-md-6:hover{
+    background-color: #2cbc63;
+    transition: 0.3s;
+}
+
+.triple-card{
+    background-color: #023a51;
+}
+
+.triple-card .card-title{
+    color: #023a51;
+}
+
+
+.nav2 ul li{
+    padding-right: 3.5em;
+   
+}
+
+.nav2 ul li a{
+    color: white !important;
+    font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item{
+    color: #1a4e64 !important;
+}
+
+.bgwhite{
+    background-color: white !important;
+}
+
+.btn_hover:hover{
+    background-color: #5c667d !important;
+}
+
+.span-color-1 {
+    color : #455680 !important;
+}
+
+.span-color-2 {
+    color : #2cbc63 !important;
+}
+
+.form-control::placeholder {
+    color:#5c667d;
+    padding-left: 0.5em;
+}
+
+.col-md-6 img{
+    height: 100%;
+    width: 100%;
+}
+
+.h5-page1{
+    color: #033a52 !important;
+}
+
+.p-page1{
+    color: #a7aeb9 !important;
+}
