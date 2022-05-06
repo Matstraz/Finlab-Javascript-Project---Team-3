@@ -36,10 +36,10 @@ html {
 }
 
 
-.nav2 ul li{
-    padding-right: 3.5em;
+/* .nav2 ul li{
+     padding-right: 3.5em; 
    
-}
+} */
 
 .nav2 ul li a{
     color: white !important;
@@ -82,4 +82,9 @@ html {
 
 .p-page1{
     color: #a7aeb9 !important;
+}
+
+.fz-page1{
+    font-size: 4.5em;
+    font-weight: 700;
 }
