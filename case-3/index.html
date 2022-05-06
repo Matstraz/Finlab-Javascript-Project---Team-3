@@ -31,7 +31,7 @@
             </path>
           </g>
         </svg><i class="text-white">envato</i><i class="text-lime">market</i> </a>
-        <a class="btn btn-success" href="#" role="button">Buy Now</a>
+      <a class="btn btn-success" href="#" role="button">Buy Now</a>
     </div>
   </nav>
 
@@ -96,58 +96,81 @@
           Talk an Experts
         </button>
 
-        <!-- Modal -->
+        <!-- Modal in alto a destra-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-
+                <!---------------------------close modal button-->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body d-flex flex-column gap-4">
-                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                  <option selected>Freelancer/Own business</option>
-                  <option value="1">Other options</option>
+              <!--------modal body content -->
+              <form class="modal-body d-flex flex-column  gap-4">
+                <!-----------------content 1-------------->
+                <div class="field d-flex border-1 border-bottom">
+                 <label class="col-3" for="">I'm a/an</label>
+                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-1">
+                  <option value="Freelancer/Own business">Freelancer/Own business</option>
+                  <option value="Other options">Other options</option>
                 </select>
-                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                  <option selected>Call me to Discuss my Questions</option>
-                  <option value="1">Email me your digital prospectus</option>
-                  <option value="2">Mail me your full information pack</option>
+              </div>
+                <!---------------------content 2-------->
+                <div class="field d-flex border-1 border-bottom">
+                  <label class="col-3" for="">I Want</label>
+                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-2">
+                  <option value="Call me to Discuss my Questions">Call me to Discuss my Questions</option>
+                  <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                  <option value="Mail me your full information pack">Mail me your full information pack</option>
                 </select>
-                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                  <option selected>Financial Consultant</option>
-                  <option value="1">Accounting Services</option>
-                  <option value="2">Tax Services</option>
-                  <option value="3">Careers</option>
-                  <option value="4">Request Additional Information</option>
+              </div>
+                <!-----content  3----------->
+                <div class="field d-flex border-1 border-bottom">
+                  <label class="col-3" for="">I interested</label>
+                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-3">
+                  <option value="Financial Consultant">Financial Consultant</option>
+                  <option value="Accounting Services">Accounting Services</option>
+                  <option value="Tax Services">Tax Services</option>
+                  <option value="Careers">Careers</option>
+                  <option value="Request Additional Information">Request Additional Information</option>
                 </select>
-                <form action="">
-                  <label for="name">Your Name*</label>
-                  <input class="form-control form-control-lg" type="text" placeholder="Eg. John Doe" id="name">
-                  <label for="email">Email*</label>
-                  <input class="form-control form-control-lg" type="email" placeholder="name@company.com" id="email">
-                  <label for="psw">Phone Number</label>
-                  <input class="form-control form-control-lg" type="tel" placeholder="Full Number (incl.prefix)"
-                    id="psw">
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+              </div>
+                <form class="d-flex flex-column gap-2" action="post" method="post" id="modal-form">
+                  <!----------------modal name label-->
+                  <div class="field d-flex flex-column">
+                    <label for="modal-name">Your Name *</label>
+                    <input class="col-12 " type="text" name="modal-name" id="modal-name">
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input id="checkbox3" type="checkbox" checked="checked">
-                    <label for="checkbox3">I agree to receive communications from FinLab.</label>
+                  <!----------------modal email and Phone label-->
+                  <div class="field d-flex justify-content-between">
+                    <div class="d-flex flex-column col-5">
+                      <label for="modal-email">Email *</label>
+                      <input class="" type="text" name="modal-email" id="modal-email">
+                    </div>
+                    <div class="d-flex flex-column col-5">
+                      <label for="modal-phone">Phone Number *</label>
+                      <input class="" type="tel" name="modal-phone" id="modal-phone">
+                    </div>
                   </div>
-                  <button type="button" class="btn-lg">Large button</button>
+                  <!----------------modal message label-->
+                  <div class="field d-flex flex-column">
+                    <label for="modal-message">Message</label>
+                    <textarea name="modal-message" id="modal-message" cols="35" rows="2"></textarea>
+                  </div>
+                  <div class="field">
+                    <input type="checkbox" name="checkbox-modal" id="checkbox-modal">
+                    <label for="checkbox-modal">I agree to receive communications from FinLab.</label>
+                  </div>
+                  <div class="field">
+                    <button class="btn btn-success col-4 mt-2" type="submit" id="btn-modal--submit">Send Message</button>
+                  </div>
                 </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+              </form>
+
             </div>
           </div>
         </div>
         <!-------------Fine Modal--------------->
+        <!--------------------------bi bi-cart------------------------------->
         <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-cart"
             viewBox="0 0 16 16">
@@ -155,7 +178,7 @@
               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
           </svg>
         </div>
-
+        <!-------------------------------------bi bi-search---------------------------->
         <div class=" rounded-circle btn btn-light d-none d-md-inline-block">
           <a href=""><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
                 class="bi bi-search" viewBox="0 0 16 16">
@@ -165,20 +188,22 @@
             </span>
           </a>
         </div>
-        <!-----------------------Offcanvas media query-->
+        <!-----------------------Offcanvas media query-------------------------->
         <div>
+          <!-------------------------Offcanvas trigger button dropdown menu-->
           <button class="d-xl-none  btn btn-light rounded-circle" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg></button>
-
+          <!-------------------------------------Offcanvas body dropdown menu----------------------->
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
+            <!------------------------------Home section--------------------------->
             <div class="offcanvas-body">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -200,6 +225,7 @@
                     </div>
                   </div>
                 </div>
+                <!----------------------------Who We Are section------------>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -220,6 +246,7 @@
                     </div>
                   </div>
                 </div>
+                <!-----------------------------------What We Do section----------->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -244,6 +271,7 @@
                   </div>
                 </div>
               </div>
+              <!--------------------Case Studies--------------------->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -270,21 +298,16 @@
         </div>
       </div>
     </div>
-
-
-    </div>
-
-
     </div>
     </div>
-
+    </div>
     </div>
     <!--FINE-->
 
     <!--navbar 2 -->
 
     <div class="container pt-4 border-top border-grey  border-1  d-none d-xl-flex">
-
+      <!---------------------Offcanvas trigger menu form name phoneNumber--------------------------->
       <button class="btn btn-light rounded-circle" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg
           xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
@@ -295,7 +318,7 @@
       </button>
 
 
-
+      <!--------------------------------------Ofcanvas trigger body------------------------->
       <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
@@ -308,14 +331,25 @@
           <p><strong>Phone:</strong><a href="#">0712 610 33 181</a></p>
           <p><strong>Mail:</strong><a href="#">info@example.com</a></p>
           <div class="d-flex flex-column justify-content-between gap-3 mt-5">
+
             <p>Request a callback</p>
+            <form action="" method="post" id="recall" class="">
 
-            <input type="text" class="form-control" placeholder="First name *" aria-label="First name">
-
-
-            <input type="text" class="form-control" placeholder="Phone Number *" aria-label="Last name">
-
-            <button class="btn btn-primary" type="submit">Button</button>
+              <!-------First Name Label-->
+              <div class="field">
+                <label for="First name"></label>
+                <input type="text" class="form-control" id="form-firstName-body" name="First name"
+                  placeholder="First name *" aria-label="First name">
+              </div>
+              <!-----------phone number label-------->
+              <div class="field mt-2">
+                <label for="Phone number"></label>
+                <input type="text" class="form-control " id="form-phoneNumber-body" name="Phone number"
+                  placeholder="Phone Number *" aria-label="Last name">
+              </div>
+              <!------------btn label-->
+              <button class="btn btn-success col-12 mt-3" id="btn-form--submit" type="submit">Button</button>
+            </form>
           </div>
         </div>
       </div>
@@ -456,7 +490,7 @@
                   <p>When Spartz and his team sought a firm to help them improve their sales proce</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/x-body.svg" alt="">
+                  <img src="asset/x-body.svg" alt="">
                 </div>
               </div>
             </div>
@@ -486,7 +520,7 @@
                   <p>Exchange risk is the effect that unanticipated exchange rate changes have on</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/nz-body.svg" alt="">
+                  <img src="asset/nz-body.svg" alt="">
                 </div>
               </div>
             </div>
@@ -516,7 +550,7 @@
                   <p>In Europe, declining corporate tax rates have come along with rising tax-to-G</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/fb-body.svg" alt="">
+                  <img src="asset/fb-body.svg" alt="">
                 </div>
               </div>
             </div>
@@ -546,7 +580,7 @@
                   <p>A distributor of home products with multiple locations and sales of $15M.</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/nnt-body.svg" alt="">
+                  <img src="asset/nnt-body.svg" alt="">
                 </div>
               </div>
             </div>
@@ -577,7 +611,7 @@
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/cos-body.svg" alt="">
+                  <img src="asset/cos-body.svg" alt="">
                 </div>
               </div>
             </div>
@@ -608,7 +642,7 @@
                   <p>A company that provides insurance and investment-related products and service</p>
                 </div>
                 <div class="align-self-xxl-end ">
-                  <img src="/case-3/asset/logo-envato-1.svg" alt="">
+                  <img src="asset/logo-envato-1.svg" alt="">
                 </div>
               </div>
             </div>
@@ -735,8 +769,10 @@
               <input type="email" class="mb-2 form-control bg-transparent border-0" id="exampleInputEmail1"
                 aria-describedby="emailHelp" placeholder="Your email address" required>
               <button type="submit" class="p-0 border-0 bg-transparent fs-4 mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                 </svg>
               </button>
             </form>
@@ -750,7 +786,7 @@
     </div>
   </footer>
 
-
+  <script src="script-case.js"></script>
 
 </body>
 
