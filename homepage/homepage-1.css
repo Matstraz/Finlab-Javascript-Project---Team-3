@@ -93,9 +93,6 @@ html {
     border: none;
 }
 
-.page-1-all-cards{
-    width: 100%;
-}
 
 .page-1-all-cards img:hover{
     border-bottom: 3px solid #2cbc63 !important;
@@ -106,4 +103,27 @@ html {
     width: 50px;
     background: #023a51;
     border-radius: 25px;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1;
+    color: #023a51;
+}
+
+.page-1-text{
+    color: #5C667D !important;
+}
+
+.no-border-list ul li{
+    border: none !important;
+    cursor: pointer;
+    color: #5C667D !important;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.color-text-blue{
+    color: #023A51 !important;
 }
