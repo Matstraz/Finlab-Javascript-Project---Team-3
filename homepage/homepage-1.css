@@ -133,3 +133,24 @@ html {
     border-bottom: 8px solid #023a51;
     
 }
+
+
+/* footer */
+footer{
+    background-color: #023a51;
+  }
+  
+  
+  .foot button.btn{
+    height: 60px;
+    width: 270px!important;
+  }
+  
+  .topfoot{
+    background-image: url(/case-3/asset/map-ft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+  }
