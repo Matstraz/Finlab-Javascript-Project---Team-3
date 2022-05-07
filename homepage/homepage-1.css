@@ -127,3 +127,9 @@ html {
 .color-text-blue{
     color: #023A51 !important;
 }
+
+
+.border-blue{
+    border-bottom: 8px solid #023a51;
+    
+}
