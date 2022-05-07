@@ -1,5 +1,4 @@
 
-
 html {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
 }
@@ -12,7 +11,7 @@ html {
 }
 
 .bg-color-blue {
-    background-color: #1a4e64 !important;
+    background-color: var(--medium-blue) !important;
 
 
 }
@@ -23,16 +22,16 @@ html {
 
 
 .hover-card-hero:hover{
-    background-color: #2cbc63;
+    background-color: var(--green);
     transition: 0.3s;
 }
 
 .triple-card{
-    background-color: #023a51;
+    background-color: var(--high-blue) ;
 }
 
 .triple-card .card-title{
-    color: #023a51;
+    color: var(--high-blue) ;
 }
 
 
@@ -42,32 +41,32 @@ html {
 } */
 
 .nav2 ul li a{
-    color: white !important;
+    color: var(--white) !important;
     font-weight: 600;
 }
 
 .dropdown-menu .dropdown-item{
-    color: #1a4e64 !important;
+    color: var(--medium-blu)!important;
 }
 
 .bgwhite{
-    background-color: white !important;
+    background-color: var(--white)  !important;
 }
 
 .btn_hover:hover{
-    background-color: #5c667d !important;
+    background-color: var(--super-light-blue) !important;
 }
 
 .span-color-1 {
-    color : #455680 !important;
+    color : var(--light-blue) !important;
 }
 
 .span-color-2 {
-    color : #2cbc63 !important;
+    color : var(--green) !important;
 }
 
 .form-control::placeholder {
-    color:#5c667d;
+    color: var(--super-light-blue);
     padding-left: 0.5em;
 }
 
@@ -77,11 +76,11 @@ html {
 }
 
 .h5-page1{
-    color: #033a52 !important;
+    color: var(--high-blue)  !important;
 }
 
 .p-page1{
-    color: #a7aeb9 !important;
+    color: var(--light-grey) !important;
 }
 
 .fz-page1{
@@ -95,13 +94,13 @@ html {
 
 
 .page-1-all-cards img:hover{
-    border-bottom: 3px solid #2cbc63 !important;
+    border-bottom: 3px solid var(--green) !important;
     cursor: pointer;
 }
 
 .plus-circle img{
     width: 50px;
-    background: #023a51;
+    background: var(--high-blue) ;
     border-radius: 25px;
 }
 
@@ -109,11 +108,11 @@ html {
     font-weight: 600;
     font-size: 4rem;
     line-height: 1;
-    color: #023a51;
+    color: var(--high-blue) ;
 }
 
 .page-1-text{
-    color: #5C667D !important;
+    color: var( --super-light-blue) !important;
 }
 
 .no-border-list ul li{
@@ -125,19 +124,19 @@ html {
 }
 
 .color-text-blue{
-    color: #023A51 !important;
+    color: var(--high-blue) !important;
 }
 
 
 .border-blue{
-    border-bottom: 8px solid #023a51;
+    border-bottom: 8px solid var(--high-blue);
     
 }
 
 
 /* footer */
 footer{
-    background-color: #023a51;
+    background-color: var(--high-blue);
   }
   
   
@@ -154,3 +153,21 @@ footer{
     margin-top: 5rem;
     padding-top: 2.5rem;
   }
+
+  .double-list ul li:hover {
+        color: var(--green) !important;
+  }
+
+
+  /* PALETTE COLORS */
+  :root{
+      
+    --green: #2cbc63;
+    --light-blue: #455680;
+    --medium-blue: #1a4e64;
+    --high-blue: #023a51;
+    --super-light-blue: #5c667d;
+    --white: #ffffff;
+    --light-grey: #a7aeb9;
+    
+}
