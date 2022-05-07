@@ -22,7 +22,7 @@ html {
 }
 
 
-.col-md-6:hover{
+.hover-card-hero:hover{
     background-color: #2cbc63;
     transition: 0.3s;
 }
@@ -87,4 +87,23 @@ html {
 .fz-page1{
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.no-border-card{
+    border: none;
+}
+
+.page-1-all-cards{
+    width: 100%;
+}
+
+.page-1-all-cards img:hover{
+    border-bottom: 3px solid #2cbc63 !important;
+    cursor: pointer;
+}
+
+.plus-circle img{
+    width: 50px;
+    background: #023a51;
+    border-radius: 25px;
 }
