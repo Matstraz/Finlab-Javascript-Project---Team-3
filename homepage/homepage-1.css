@@ -158,6 +158,10 @@ footer{
         color: var(--green) !important;
   }
 
+  .fs-big-title {
+      font-size: var(--fs) !important; 
+  }
+
 
   /* PALETTE COLORS */
   :root{
@@ -170,4 +174,6 @@ footer{
     --white: #ffffff;
     --light-grey: #a7aeb9;
     
+    /* CUSTOM FONT SIZE */
+    --fs: 3.5rem;
 }
