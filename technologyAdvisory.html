@@ -107,44 +107,44 @@
           <form action="#" method="post" >
             <div class="d-flex justify-content-between align-items-center border-bottom p-1">
               <label for="work" class="text-secondary w-25">I'm a/an</label>
-              <select class="form-select w-75 border-0" id="work" aria-label="Default select example">
-                <option selected><strong>Freelancer-Own Businnes</strong></option>
-                <option value="1"><strong>Other Options</strong></option>
+              <select class="form-select w-75 border-0 modalSelect" id="work" aria-label="Default select example">
+                <option va><strong>Freelancer-Own Businnes</strong></option>
+                <option value="Other Options"><strong>Other Options</strong></option>
               </select>
             </div>
             <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-4">
-              <label for="work" class="text-secondary w-25">I Want</label>
-              <select class="form-select w-75 border-0" id="work" aria-label="Default select example">
-                <option selected><strong>Call me to Discuss my Questions</strong></option>
-                <option value="1"><strong>Email me your digital prospectus</strong></option>
-                <option value="2"><strong>Mail me full information pack</strong></option>
+              <label for="wanted" class="text-secondary w-25">I Want</label>
+              <select class="form-select w-75 border-0 modalSelect" id="wanted" aria-label="Default select example">
+                <option value="Call me to Discuss my Questions" selected><strong>Call me to Discuss my Questions</strong></option>
+                <option value="Email me your digital prospectus"><strong>Email me your digital prospectus</strong></option>
+                <option value="Mail me full information pack"><strong>Mail me full information pack</strong></option>
               </select>
             </div>
             <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-4">
-              <label for="work" class="text-secondary w-25">I interested</label>
-              <select class="form-select w-75 border-0" id="work" aria-label="Default select example">
-                <option selected><strong>Financial Consultant</strong></option>
-                <option value="1"><strong>Accounting Services</strong></option>
-                <option value="2"><strong>Tax Services</strong></option>
-                <option value="3"><strong>Careers</strong></option>
-                <option value="3"><strong>Request Adittional information</strong></option>
+              <label for="interestedIn" class="text-secondary w-25">I interested</label>
+              <select class="form-select w-75 border-0 modalSelect" id="interestedIn" aria-label="Default select example">
+                <option value="Financial Consultant" selected><strong>Financial Consultant</strong></option>
+                <option value="Accounting Services"><strong>Accounting Services</strong></option>
+                <option value="Tax Services"><strong>Tax Services</strong></option>
+                <option value="Careers"><strong>Careers</strong></option>
+                <option value="Request Adittional information"><strong>Request Adittional information</strong></option>
               </select>
             </div>
             <label for="name" class="form-label text-secondary mt-5"><strong>Your Name *</strong></label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
             <div class="d-flex justify-content-between mt-4">
               <div class="sxOne text-secondary">
-                <label for="exampleInputEmail1"><strong>Your Email *</strong></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com" required>
+                <label for="email"><strong>Your Email *</strong></label>
+                <input type="email" class="form-control modalSelect" id="email" aria-describedby="emailHelp" placeholder="name@company.com" required>
               </div>
               <div class="rxOne text-secondary">
-                <label for="pnumber"><strong>Phone Number *</strong></label>
-                <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)" required>
+                <label for="phoneNumber"><strong>Phone Number *</strong></label>
+                <input type="tel" class="form-control modalSelect" id="phoneNumber" placeholder="Full Number (incl. prefix)" required>
               </div>
             </div>
             <div class="mt-4 text-secondary">
-              <label for="exampleFormControlTextarea1" class="form-label"><strong>Message</strong></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
+              <label for="textMessage" class="form-label"><strong>Message</strong></label>
+              <textarea class="form-control modalSelect" id="textMessage" rows="3" placeholder="Enter Message"></textarea>
             </div>
             <div class="form-check mt-4 text-secondary">
               <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
@@ -152,7 +152,7 @@
                 I agree to receive communications from FinLab.
               </label>
             </div>
-            <button type="submit" class="btn btn-success btn-bar d-flex align-items-center justify-content-center mt-4 w-50">Send Message</button>
+            <button type="submit" class="btn btn-success btn-bar d-flex align-items-center justify-content-center mt-4 w-50 modalButton">Send Message</button>
           </form>
         </div>
       </div>
@@ -175,10 +175,10 @@
       <form action="#" method="post" class="mt-5 w-75">
         <div class="mb-3">
           <label for="name" class="form-label text-secondary">Request a callback</label>
-          <input type="text" class="form-control canvasName" id="name" name="name" placeholder="Your Name *">
+          <input type="text" class="form-control canvasName offCavansLarge" id="name" name="name" placeholder="Your Name *">
         <div class="mb-3">
           <label for="telnumber" class="form-label text-secondary"></label>
-          <input type="tel" class="form-control canvasTel" id="telnumber" name="telnumber" placeholder="Phone Number *">
+          <input type="tel" class="form-control canvasTel offCavansLarge" id="telnumber" name="telnumber" placeholder="Phone Number *">
         </div>
         <button type="submit" class="btn btn-success w-100 m-auto callback">Request a Callback</button>
       </form>
@@ -497,8 +497,8 @@
           <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
           <div class="d-flex justify-content-between mt-4">
             <div class="sxOne text-secondary mt-4">
-              <label for="exampleInputEmail1"><strong>Your Email *</strong></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@company.com" required>
+              <label for="email"><strong>Your Email *</strong></label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@company.com" required>
             </div>
             <div class="rxOne text-secondary mt-4">
               <label for="pnumber"><strong>Phone Number *</strong></label>
@@ -625,8 +625,8 @@
         <div class="col-sm-12 col-lg-4 moredist">
           <p class="text-secondary mt-3 small">By providing your e-mail address, you are consenting to receive press releases, presentations and other information concerning FinLab.</p>
           <form action="#" method="post" class="border-bottom d-flex mt-5">
-            <label for="exampleInputEmail1" class="form-label d-none"></label>
-            <input type="email" class="mb-2 form-control bg-transparent border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address" required>
+            <label for="email" class="form-label d-none"></label>
+            <input type="email" class="mb-2 form-control bg-transparent border-0" id="email" aria-describedby="emailHelp" placeholder="Your email address" required>
             <button type="submit" class="p-0 border-0 bg-transparent fs-4 mb-2">
               <i class="fa-solid fa-circle-arrow-right text-white"></i>
             </button>
