@@ -1,3 +1,5 @@
+/* OFFCANVAS */
+
 let offButton = document.querySelector('.callback')
 let input1 = document.querySelector('.canvasName').value
 let input2 = document.querySelector('.canvasTel').value
@@ -29,14 +31,26 @@ offButton.onclick = function (event){
     console.log(obj)
 } */
 
+/* MODALE */
 let modButtom = document.querySelector('.modalButton')
-let selects = document.querySelectorAll('.modalSelect')
+let modalAnswers = document.querySelectorAll('.modalSelect')
 
 
 modButtom.onclick = function (event){
     event.preventDefault()
-    let obj = {}
-    selects.forEach((element, i) => obj[selects[i].id] = selects[i].value);
-    console.log(obj)
+    let objModal = {}
+    modalAnswers.forEach((element, i) => objModal[modalAnswers[i].id] = modalAnswers[i].value);
+    console.log(objModal)
 }
 
+/* FORM */
+
+let formButtom = document.querySelector('.formButton')
+let formAnswers = document.querySelectorAll('.formSelect')
+
+formButtom.onclick = function (event){
+    event.preventDefault()
+    let objForm = {}
+    formAnswers.forEach((element, i) => objForm[formAnswers[i].id] = formAnswers[i].value);
+    console.log(objForm)
+}

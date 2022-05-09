@@ -108,7 +108,7 @@
             <div class="d-flex justify-content-between align-items-center border-bottom p-1">
               <label for="work" class="text-secondary w-25">I'm a/an</label>
               <select class="form-select w-75 border-0 modalSelect" id="work" aria-label="Default select example">
-                <option va><strong>Freelancer-Own Businnes</strong></option>
+                <option value="Freelancer-Own Businnes"><strong>Freelancer-Own Businnes</strong></option>
                 <option value="Other Options"><strong>Other Options</strong></option>
               </select>
             </div>
@@ -131,7 +131,7 @@
               </select>
             </div>
             <label for="name" class="form-label text-secondary mt-5"><strong>Your Name *</strong></label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
+            <input type="text" class="form-control modalSelect" id="name" name="name" placeholder="Eg: Jonn Doe" required>
             <div class="d-flex justify-content-between mt-4">
               <div class="sxOne text-secondary">
                 <label for="email"><strong>Your Email *</strong></label>
@@ -470,44 +470,44 @@
         <form action="#" method="post" class="w-75 m-auto animate__animated animate__fadeInUp">
           <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-5">
             <label for="work" class="text-secondary w-25">I'm a/an</label>
-            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10" id="work" aria-label="Default select example">
-              <option selected><strong>Freelancer-Own Businnes</strong></option>
-              <option value="1"><strong>Other Options</strong></option>
+            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10 formSelect" id="work" aria-label="Default select example">
+              <option value="Freelancer-Own Businnes"><strong>Freelancer-Own Businnes</strong></option>
+              <option value="Other Options"><strong>Other Options</strong></option>
             </select>
           </div>
           <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-4">
-            <label for="work" class="text-secondary w-25">I Want</label>
-            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10" id="work" aria-label="Default select example">
-              <option selected ><strong>Call me to Discuss my Questions</strong></option>
-              <option value="1"><strong>Email me your digital prospectus</strong></option>
-              <option value="2"><strong>Mail me full information pack</strong></option>
+            <label for="wanted" class="text-secondary w-25">I Want</label>
+            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10 formSelect" id="wanted" aria-label="Default select example">
+              <option value="Call me to Discuss my Questions"><strong>Call me to Discuss my Questions</strong></option>
+              <option value="Email me your digital prospectus"><strong>Email me your digital prospectus</strong></option>
+              <option value="Mail me full information pack"><strong>Mail me full information pack</strong></option>
             </select>
           </div>
           <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-4">
-            <label for="work" class="text-secondary w-25">I interested</label>
-            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10" id="work" aria-label="Default select example">
-              <option selected><strong>Financial Consultant</strong></option>
-              <option value="1"><strong>Accounting Services</strong></option>
-              <option value="2"><strong>Tax Services</strong></option>
-              <option value="3"><strong>Careers</strong></option>
-              <option value="3"><strong>Request Adittional information</strong></option>
+            <label for="interestedIn" class="text-secondary w-25">I interested</label>
+            <select class="form-select w-75 border-0 bg-secondary bg-opacity-10 formSelect" id="interestedIn" aria-label="Default select example">
+              <option value="Financial Consultant" selected><strong>Financial Consultant</strong></option>
+              <option value="Accounting Services"><strong>Accounting Services</strong></option>
+              <option value="Tax Services"><strong>Tax Services</strong></option>
+              <option value="Careers"><strong>Careers</strong></option>
+              <option value="Request Adittional information"><strong>Request Adittional information</strong></option>
             </select>
           </div>
           <label for="name" class="form-label text-secondary mt-5"><strong>Your Name *</strong></label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Eg: Jonn Doe" required>
+          <input type="text" class="form-control formSelect" id="name" name="name" placeholder="Eg: Jonn Doe" required>
           <div class="d-flex justify-content-between mt-4">
             <div class="sxOne text-secondary mt-4">
               <label for="email"><strong>Your Email *</strong></label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@company.com" required>
+              <input type="email" class="form-control formSelect" id="email" aria-describedby="emailHelp" placeholder="name@company.com" required>
             </div>
             <div class="rxOne text-secondary mt-4">
-              <label for="pnumber"><strong>Phone Number *</strong></label>
-              <input type="tel" class="form-control" id="fnumber" placeholder="Full Number (incl. prefix)" required>
+              <label for="phoneNumber"><strong>Phone Number *</strong></label>
+              <input type="tel" class="form-control formSelect" id="phoneNumber" placeholder="Full Number (incl. prefix)" required>
             </div>
           </div>
           <div class="mt-4 text-secondary">
-            <label for="exampleFormControlTextarea1" class="form-label"><strong>Message</strong></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
+            <label for="textMessage" class="form-label"><strong>Message</strong></label>
+            <textarea class="form-control formSelect" id="textMessage" rows="3" placeholder="Enter Message"></textarea>
           </div>
           <div class="form-check mt-4 text-secondary">
             <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
@@ -515,7 +515,7 @@
               I agree to receive communications from FinLab.
             </label>
           </div>
-          <button type="submit" class="btn btn-success btn-bar d-flex align-items-center justify-content-center mt-4 w-100 mb-5">Send Message</button>
+          <button type="submit" class="btn btn-success btn-bar d-flex align-items-center justify-content-center mt-4 w-100 mb-5 formButton">Send Message</button>
         </form>
       </div>
       <div class="col-6 d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block formpic animate__animated animate__fadeInUp animate__delay-1s">
