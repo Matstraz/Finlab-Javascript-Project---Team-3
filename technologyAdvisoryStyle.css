@@ -270,6 +270,18 @@ main{
     color: #FFFFFF99 !important;
 }
 
+.cookies{
+    width: 280px;
+    height: 200px;
+    position: fixed;
+    top: 27rem;
+    left: 1rem;
+}
+
+.cookies p{
+    font-size: small;
+}
+
 
 /* MEDIA QUERIES */
 

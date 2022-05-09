@@ -639,8 +639,22 @@
     </div>
   </div>
 </footer>
-
-
-
+<div class="cookies text-center bg-white border-dark border p-2">
+  <h6 class="text-center"><strong>Cookies</strong></h6>
+  <p>We use cookies to help personalize content and provide a better experience. By selencting yes, you agree this.</p>
+  <form action="#" method="post" class="d-flex flex-column">
+    <div class="d-flex justify-content-evenly">
+      <div>
+        <input id="acceptCookies" type="radio" name="cookies" value="yes" class="yesCookies">
+        <label for="acceptCookies">Yes</label>
+      </div>
+      <div>
+        <input id="acceptCookies" type="radio" name="cookies" value="no" class="noCookies">
+        <label for="acceptCookies">no</label>
+      </div>
+    </div>
+    <button type="submit" class="w-75 m-auto mt-3 bg-success cookiesButton" >Send</button>
+  </form>
+</div>
 </body>
 </html>
