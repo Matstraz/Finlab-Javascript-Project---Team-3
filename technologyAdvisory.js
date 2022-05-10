@@ -6,7 +6,11 @@ let input2 = document.querySelector('.canvasTel').value
 
 offButton.onclick = function (event){
     event.preventDefault(event)
-    console.log(`success: ${input1} ${input2}`)
+    if(input1&&input2 !== ""){
+        console.log(`success: ${input1} ${input2}`)
+    }else{
+        throw Error('each blanket must be filled')
+    }
 }
 
 /* //ALTERNATIVA PER CREARE UN ARRAY CON COPPIE DI ARRAY [key, value]
