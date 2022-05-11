@@ -137,27 +137,27 @@
                 <form class="d-flex flex-column gap-2" action="post" method="post" id="modal-form">
                   <!----------------modal name label-->
                   <div class="field d-flex flex-column">
-                    <label for="modal-name">Your Name *</label>
-                    <input class="col-12 " type="text" name="modal-name" id="modal-name">
+                    <label for="modal-name" class="form-label">Your Name *</label>
+                    <input class="col-12 form-control" type="text" name="modal-name" id="modal-name" required>
                   </div>
                   <!----------------modal email and Phone label-->
-                  <div class="field d-flex justify-content-between">
-                    <div class="d-flex flex-column col-5">
-                      <label for="modal-email">Email *</label>
-                      <input class="" type="text" name="modal-email" id="modal-email">
+                  <div class="field row">
+                    <div class="col-6">
+                      <label for="modal-email" class="form-label">Email *</label>
+                      <input class="form-control" type="email" name="modal-email" id="modal-email" required>
                     </div>
-                    <div class="d-flex flex-column col-5">
-                      <label for="modal-phone">Phone Number *</label>
-                      <input class="" type="tel" name="modal-phone" id="modal-phone">
+                    <div class="col-6">
+                      <label for="modal-phone" class="form-label">Phone Number *</label>
+                      <input class="form-control" type="tel" name="modal-phone" id="modal-phone" required>
                     </div>
                   </div>
                   <!----------------modal message label-->
                   <div class="field d-flex flex-column">
-                    <label for="modal-message">Message</label>
-                    <textarea name="modal-message" id="modal-message" cols="35" rows="2"></textarea>
+                    <label for="modal-message" class="form-label">Message</label>
+                    <textarea name="modal-message" id="modal-message" cols="35" rows="2" required></textarea>
                   </div>
                   <div class="field">
-                    <input type="checkbox" name="checkbox-modal" id="checkbox-modal">
+                    <input type="checkbox" name="checkbox-modal" id="checkbox-modal" required>
                     <label for="checkbox-modal">I agree to receive communications from FinLab.</label>
                   </div>
                   <div class="field">
@@ -337,15 +337,15 @@
 
               <!-------First Name Label-->
               <div class="field">
-                <label for="First name"></label>
+                <label for="First name" class="form-label"></label>
                 <input type="text" class="form-control" id="form-firstName-body" name="First name"
-                  placeholder="First name *" aria-label="First name">
+                  placeholder="First name *" aria-label="First name" required>
               </div>
               <!-----------phone number label-------->
               <div class="field mt-2">
-                <label for="Phone number"></label>
+                <label for="Phone number" class="form-label"></label>
                 <input type="text" class="form-control " id="form-phoneNumber-body" name="Phone number"
-                  placeholder="Phone Number *" aria-label="Last name">
+                  placeholder="Phone Number *" aria-label="Last name" required>
               </div>
               <!------------btn label-->
               <button class="btn btn-success col-12 mt-3" id="btn-form--submit" type="submit">Button</button>
