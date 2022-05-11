@@ -137,23 +137,23 @@
                 <form class="d-flex flex-column gap-2" action="post" method="post" id="modal-form">
                   <!----------------modal name label-->
                   <div class="field d-flex flex-column">
-                    <label for="modal-name">Your Name *</label>
-                    <input class="col-12 " type="text" name="modal-name" id="modal-name">
+                    <label for="modal-name" class="form-label">Your Name *</label>
+                    <input class="col-12 form-control" type="text" name="modal-name" id="modal-name">
                   </div>
                   <!----------------modal email and Phone label-->
-                  <div class="field d-flex justify-content-between">
-                    <div class="d-flex flex-column col-5">
-                      <label for="modal-email">Email *</label>
-                      <input class="" type="text" name="modal-email" id="modal-email">
+                  <div class="field row">
+                    <div class="col-6">
+                      <label for="modal-email" class="form-label">Email *</label>
+                      <input class="form-control" type="email" name="modal-email" id="modal-email">
                     </div>
-                    <div class="d-flex flex-column col-5">
-                      <label for="modal-phone">Phone Number *</label>
-                      <input class="" type="tel" name="modal-phone" id="modal-phone">
+                    <div class="col-6">
+                      <label for="modal-phone" class="form-label">Phone Number *</label>
+                      <input class="form-control" type="tel" name="modal-phone" id="modal-phone">
                     </div>
                   </div>
                   <!----------------modal message label-->
                   <div class="field d-flex flex-column">
-                    <label for="modal-message">Message</label>
+                    <label for="modal-message" class="form-label">Message</label>
                     <textarea name="modal-message" id="modal-message" cols="35" rows="2"></textarea>
                   </div>
                   <div class="field">
