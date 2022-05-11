@@ -32,6 +32,8 @@ modButtom.onclick = function (event){
     event.preventDefault(event)
     let objModal = {}
     modalAnswers.forEach((element, i) => objModal[modalAnswers[i].id] = modalAnswers[i].value);
+    let checkboxAnswer = document.querySelector('.checkboxAnswer')
+    objModal[checkboxAnswer.id] = checkboxAnswer.checked
     console.log(objModal)
 }
 
@@ -39,11 +41,13 @@ modButtom.onclick = function (event){
 
 let formButtom = document.querySelector('.formButton')
 let formAnswers = document.querySelectorAll('.formSelect')
+let checkboxAnswer2 = document.querySelector('.checkboxAnswer2')
 
 formButtom.onclick = function (event){
     event.preventDefault(event)
     let objForm = {}
     formAnswers.forEach((element, i) => objForm[formAnswers[i].id] = formAnswers[i].value);
+    objForm[checkboxAnswer2.id] = checkboxAnswer2.checked
     console.log(objForm)
 }
 
