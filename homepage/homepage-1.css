@@ -137,7 +137,17 @@ html {
 /* footer */
 footer{
     background-color: var(--high-blue);
+    
   }
+
+  li {
+      list-style-type: none;
+      text-decoration: none;
+  }
+
+  li a {
+    text-decoration: none;
+}
   
   
   .foot button.btn{
@@ -160,6 +170,15 @@ footer{
 
   .fs-big-title {
       font-size: var(--fs) !important; 
+  }
+
+
+  .cards-hover-green img:hover{
+    background:#2cbc63 !important;
+  }
+  
+  .bg-img-page1{
+      
   }
 
 

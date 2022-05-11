@@ -33,7 +33,7 @@
         <div class="logo d-inline-flex">
           <img src="/homepage/finlab contents/finlab_logo.png" width="229" height="40">
 
-          <div class="icons_nav_left mx-4  my-1 w-100 d-flex">
+          <div class="d-md-none d-lg-none d-xl-inline-flex icons_nav_left mx-4  my-1 w-100 d-flex">
 
             <!-- FACEBOOK ICON -->
             <a class="d-none d-lg-block" href="">
@@ -123,7 +123,7 @@
 
     <!-- NAVBAR 2  -->
     <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-color-blue">
-      <div class="container">
+      <div class="container d-lg-none d-xl-inline-flex">
 
         <div class="innerNavBar d-flex w-100 pt-3 pb-3 ">
 
@@ -407,20 +407,26 @@
 
   <!-- PAGE 1 TEXT -->
 
-  <div class="container mt-5 ">
+  <div class="bg-img-page1 container mt-5 ">
+
     <div class="row ">
-      <div class="col-12 col-lg-6 col-md-4 fs-1 px-5"><b class="fs-5 span-color-2 px-3 ">SERVICES WE PROVIDE</b> <span
+
+      <div class="col-12 col-lg-6 col-md-12 fs-1 px-5"><b class="fs-5 span-color-2 px-3 ">SERVICES WE PROVIDE</b> <span
           class="bold"> <br> Trusted<br>
-          Commercial<br> Finance Broker. </span></div>
-      <div class="col-12 col-md-4 col-lg-3 py-5">
+          Commercial<br> Finance Broker. </span>
+        </div>
+      <div class="col-12 col-md-8 col-lg-3 py-5">
         <div><span class="fz-page1 span-color-2">435</span> <span class="page-1-text fw-bold">Million</span></div>
         <div class=" page-1-text border-1 border-top mt-2 pt-3 fw-bolder">Information on 400+ million <br> companies
-          worldwide.</div>
+          worldwide.
+        </div>
       </div>
       <div class="col-12 col-md-4  col-lg-3 py-5">
-        <div><span class="fz-page1 span-color-2">100</span> <span class="page-1-text fw-bold"> Percent </span></div>
+        <div><span class="fz-page1 span-color-2">100</span> <span class="page-1-text fw-bold"> Percent </span>
+        </div>
         <div class="page-1-text border-1 border-top mt-2 pt-3 fw-bolder">Overall client satisfaction <br> Macquarie Bank
-          VAN Survey</div>
+          VAN Survey
+        </div>
       </div>
     </div>
 
@@ -429,10 +435,11 @@
 
     <!-- PAGE 1 IMGAGES -->
     <div class="container mt-5">
-      <div class="row py-2 ">
+      <div style="cursor:pointer" class="row py-2 ">
+
         <div class="col-lg-4 p-sm-3 d-flex justify-content-center">
 
-          <div class="card no-border-card" style="width: 24rem;">
+          <div class="cards-hover-green card no-border-card" style="width: 24rem;">
             <img class="card-img-top" src="/homepage/finlab contents/page1-first.jpg" alt="Card image cap">
             <div class="card-body d-flex justify-content-center">
               <div class="text-page1 d-flex flex-column">
@@ -474,15 +481,18 @@
       <div class="container mt-5">
         <div class="row justify-content-between">
 
+          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
+              src="/homepage/finlab contents/little-icons/1.png"></div>
+          <div class="col-2 col-md-6 p-1 col-lg-2  page-1-all-cards"><img
+              src="/homepage/finlab contents/little-icons/2.png"> </div>
+          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
+              src="/homepage/finlab contents/little-icons/3.png"> </div>
+          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
+              src="/homepage/finlab contents/little-icons/4.png"></div>
+          <div class="col-2 col-md-6 col-lg-2 align-items-md-center p-1 page-1-all-cards"><img
+              src="/homepage/finlab contents/little-icons/5.png"> </div>
 
-          <div class="col-2 shadow p-1 page-1-all-cards"><img src="/homepage/finlab contents/little-icons/1.png"></div>
-          <div class="col-2 shadow p-1 page-1-all-cards"><img src="/homepage/finlab contents/little-icons/2.png"> </div>
-          <div class="col-2 shadow p-1 page-1-all-cards"><img src="/homepage/finlab contents/little-icons/3.png"> </div>
-          <div class="col-2 shadow p-1 page-1-all-cards"><img src="/homepage/finlab contents/little-icons/4.png"></div>
-          <div class="col-2 shadow p-1 page-1-all-cards"><img src="/homepage/finlab contents/little-icons/5.png"> </div>
-
-
-          <h5 class="text-center mt-5 pb-5"><span class ="plus-circle px-3 "><img style="cursor: pointer;"
+          <h5 class="text-center mt-5 pb-5"><span class="plus-circle px-3 "><img style="cursor: pointer;"
                 src="/homepage/finlab contents/plus-circle.svg"></span>View All Services</h5>
         </div>
       </div>
@@ -493,8 +503,8 @@
     <!-- PAGE 2 TEXT  -->
     <div class="container pb-5 ">
       <div class="row gap-2 ">
-        <div class="page-2-text d-flex text-center ">
-          <div class="col-lg-5 ms-lg-3 text-start">
+        <div class="d-md-block d-lg-flex page-2-text d-flex text-center ">
+          <div class="col-lg-5 col-md-12 text-md-center ms-lg-3 text-lg-start">
             <p class="bold"><b class="fs-5 span-color-2 px-xl-2 ">INDUSTRIES WE SERVE <br> </b> Broad Knowledge <br>
               Base. Deep <br> Insights.</p>
           </div>
@@ -529,38 +539,38 @@
   <div class="all-cards d-flex flex-wrap container">
 
     <div class="row gy-4">
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c6-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c5-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c4-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c3-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c2-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card" style="width: 24rem;">
+      <div class="col-lg-4 col-md-3">
+        <div class="card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/c1-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
@@ -578,7 +588,8 @@
 
   <!-- PAGE 3 TEXT  -->
   <div class="text-center pb-3">
-    <h1 class="fs-big-title text-center fs-1 lh-1 color-text-blue fw-bold pb-2">Why choose us to be your <br> Financial Advisors?
+    <h1 class="fs-big-title text-center fs-1 lh-1 color-text-blue fw-bold pb-2">Why choose us to be your <br> Financial
+      Advisors?
     </h1>
     <p class="page-1-text fs-5 py-2">We help you to secure a stable and fulfilling financial future</p>
   </div>
@@ -590,7 +601,7 @@
   <!-- PAGE 3 TEXT - SECOND TEXT - THIRD TEXT-->
   <!-- 1 TEXT -->
   <div class="container py-3">
-    <div class="row">
+    <div class="row flex-md-wrap">
 
       <div class="col-lg-4 px-5">
         <p class="page-1-text fs-4">01.</p>
@@ -638,7 +649,8 @@
             <p style="color: #5c667d" class="fw-bolder">Defined by our People.</p>
           </div>
           <div>
-            <p style="color: #51627a;">We make a sustainable contribution to <br> the world and the people around us.</p>
+            <p style="color: #51627a;">We make a sustainable contribution to <br> the world and the people around us.
+            </p>
           </div>
         </div>
 
@@ -656,13 +668,13 @@
             <p style="color: #5c667d" class="fw-bolder">Based on Strength of Client.</p>
           </div>
           <div>
-            <p  style="color: #51627a;">
+            <p style="color: #51627a;">
               Best environment to nurture your skills <br> & help you grow.</p>
           </div>
         </div>
 
-        <div style="cursor:pointer;" class="plus-circle px-3 py-5 "><img class="" src="/homepage/finlab contents/plus-circle.svg"><span
-            class="ps-3">Learn How We Can Help</span></div>
+        <div style="cursor:pointer;" class="plus-circle px-3 py-5 "><img class=""
+            src="/homepage/finlab contents/plus-circle.svg"><span class="ps-3">Learn How We Can Help</span></div>
 
       </div>
     </div>
@@ -681,7 +693,7 @@
     <div class="row pb-5 mb-5 py-4">
 
       <div class="col-lg-4">
-        <div class="card no-border-card" style="width: 24rem;">
+        <div class="card no-border-card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap1.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body">
             <h5 class="card-title text-center">LARRY SWANK</h5>
@@ -692,7 +704,7 @@
       </div>
 
       <div class="col-lg-4">
-        <div class="card no-border-card" style="width: 24rem;">
+        <div class="card no-border-card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap2.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body text-center">
             <h5 class="card-title">ARCHANA DESKUS</h5>
@@ -703,7 +715,7 @@
       </div>
 
       <div class="col-lg-4">
-        <div class="card no-border-card" style="width: 24rem;">
+        <div class="card no-border-card">
           <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap3.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body text-center">
             <h5 class="card-title">DANIEL JAMES</h5>
@@ -728,9 +740,11 @@
     <div class="text-center"><img src="/homepage/finlab contents/little-icons/dividors.png"></div>
     <h1 class="text-center py-3 pb-3">"Your company has provided consistent, high quality, accounting support during the
       exponential growth we have experienced over the past two years"</h1>
-    <h6 class="text-center py-5"><span style="background-color: #e0ecf0; padding: 0.4em 1.5em; border-radius: 1em; color: #485972; cursor: pointer;">JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS </span></h6>
+    <h6 class="text-center py-5"><span
+        style="background-color: #e0ecf0; padding: 0.4em 1.5em; border-radius: 1em; color: #485972; cursor: pointer;">JOHN
+        DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS </span></h6>
     <div class="d-flex justify-content-center py-5">
-      <img style="cursor:pointer;" src="/homepage/finlab contents/page-4-group.png">
+      <img style="cursor:pointer;" src="/homepage/finlab contents/page-4-group.png" class="w-75">
     </div>
   </div>
   <!-- /FIRST STRUCTURE -->
@@ -745,53 +759,53 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" style="cursor:pointer">
     <div class="d-flex justify-content-between">
-    
-      <div class="col-lg-4">
-        <div class="card no-border-card" style="width: 20rem;">
+
+      <div class="col-lg-3 col-md-6 px-md-1">
+        <div class="card no-border-card">
           <img src="/homepage/finlab contents/page4-second-structure/1-image.jpg" class="card-img-top" alt="...">
 
           <div class="card-body text-center">
             <p class="text-start color-text-blue fw-bold">How To Get Back On Track With <br>Your Finances</p>
-            <p class="text-start page-1-text">Posted by 21lab.co  Sep 22, 2021</p>
+            <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
           </div>
 
-          <div class="card no-border-card" style="width: 20rem;">
+          <div class="card no-border-card">
             <img src="/homepage/finlab contents/page4-second-structure/2-image.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <p class="text-start color-text-blue fw-bold">What is Bitcoin, How to Buy & How Transaction Works</p>
-            <p class="text-start page-1-text">Posted by 21lab.co  Sep 22, 2021</p>
+              <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="card no-border-card" style="width: 24em;">
+      <div class="col-lg-4 px-md-1">
+        <div class="card no-border-card d-md-none d-lg-block d-xl-block ">
           <img src="/homepage/finlab contents/page4-second-structure/3-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
 
-        <div class="card no-border-card" style="width: 20rem;">
-          <img src="/homepage/finlab contents/Bitmap3.jpg" class="card-img-top" alt="...">
+        <div class="card no-border-card">
+          <img src="/homepage/finlab contents/page4-second-structure/4-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <p class="text-start color-text-blue fw-bold">9 Types Of Insurance You Need But May Not Have</p>
-            <p class="text-start page-1-text">Posted by 21lab.co  Sep 22, 2021</p>
+            <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
           </div>
         </div>
 
-        <div class="card no-border-card" style="width: 20rem;">
-          <img src="/homepage/finlab contents/Bitmap3.jpg" class="card-img-top" alt="...">
+        <div class="card no-border-card">
+          <img src="/homepage/finlab contents/page4-second-structure/5-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
-           
+
             <p class="text-start color-text-blue fw-bold"> 6 Things To Do Now If You Have <br> No Savings</p>
-            <p class="text-start page-1-text">Posted by 21lab.co  Sep 22, 2021</p>
+            <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
           </div>
         </div>
 
@@ -799,13 +813,20 @@
 
 
     </div>
+
+    <div class="container py-4 border-1 border-top">
+      <div class="d-flex justify-content-between">
+        <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3">SOME A FEW OF OUR CLIENTS, PARTNERS &
+          ACCREDITATIONS
+        </p>
+        <p style="color: #a7aeb9; cursor: pointer;" class="fw-bolder">Become a Partner</p>
+      </div>
+    </div>
   </div>
-
-
   <!-- /SECOND STRUCTURE -->
-
   <!-- /PAGE 4 FIRST STRUCTURE - SECOND STRUCTURE -->
-  <!--------------------footer--------->
+
+
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid foot">
@@ -826,7 +847,7 @@
           <div class="col-sm-12 col-lg-8">
             <div class="row">
               <div class="col-6 col-sm-6 col-md-3 mt-3">
-                <ul>
+                <ul class="">
                   <li class="mb-2">
                     <a class=" text-white" href="#"><strong>Follow Us</strong></a>
                   </li>
@@ -935,6 +956,8 @@
       </div>
     </div>
   </footer>
+  <!-- /FOOTER -->
+
 </body>
 
 </html>
