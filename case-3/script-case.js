@@ -47,7 +47,26 @@ modalNav.addEventListener('click', (event) => {
     document.getElementById('modal-email').value,
     document.getElementById('modal-phone').value,
     document.getElementById('modal-message').value,
-    document.getElementById('checkbox-modal').value
+    document.getElementById('checkbox-modal').checked
   );
   console.log(modalLog);
 })
+
+/* cookies */
+
+// cookie policy
+let cookiesButton = document.querySelector('.cookiesButton')
+let cookiesBox = document.querySelector('.cookies')
+let yesCookies = document.querySelector('.yesCookies')
+let noCookies = document.querySelector('.noCookies')
+
+cookiesButton.onclick = function(event){
+    event.preventDefault(event)
+    if(yesCookies.checked == true){
+        console.log(`${yesCookies.id}: ${yesCookies.value}`)
+        cookiesBox.classList.add('d-none')
+    }else if(noCookies.checked == true){
+        console.log(`${noCookies.id}: ${noCookies.value}`)
+        cookiesBox.classList.add('d-none')
+    }
+} 

@@ -156,3 +156,19 @@ footer{
 
 /*footer media 425 */
 
+
+
+
+
+.cookies{
+  width: 280px;
+  height: 200px;
+  position: fixed;
+  top: 27rem;
+  left: 1rem;
+}
+
+.cookies p{
+  font-size: small;
+}
+
