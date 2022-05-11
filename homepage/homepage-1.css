@@ -196,3 +196,28 @@ footer{
     /* CUSTOM FONT SIZE */
     --fs: 3.5rem;
 }
+
+
+
+
+
+
+
+.fixed-top.navbar-light{
+    background-color: rgb(40, 38, 38);
+    height: 54px;
+  }
+  
+  .text-lime{
+    color:#73b727 ;
+  }
+  
+  .btn-bar{
+    background-color: rgb(111, 174, 16);
+    height: 32px;
+    width: 95px;
+  }
+  
+  .navbar-bottom{
+    margin-top: 54px;
+  }
