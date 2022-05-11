@@ -1,7 +1,7 @@
  .bg-nav{
   background-color: #023a51;
 
-  background-image: url('/case-3/asset/bg-nav.svg');
+  background-image: url('asset/bg-nav.svg');
   background-size: cover;
 }
 
@@ -98,7 +98,7 @@ footer{
 }
 
 .topfoot{
-  background-image: url(/case-3/asset/map-ft.png);
+  background-image: url(asset/map-ft.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -155,4 +155,20 @@ footer{
 }
 
 /*footer media 425 */
+
+
+
+
+
+.cookies{
+  width: 280px;
+  height: 200px;
+  position: fixed;
+  top: 27rem;
+  left: 1rem;
+}
+
+.cookies p{
+  font-size: small;
+}
 
