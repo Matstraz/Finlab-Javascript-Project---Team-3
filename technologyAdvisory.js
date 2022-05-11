@@ -1,11 +1,11 @@
 /* OFFCANVAS */
 
 let offButton = document.querySelector('.callback')
-let input1 = document.querySelector('.canvasName').value
-let input2 = document.querySelector('.canvasTel').value
 
 offButton.onclick = function (event){
     event.preventDefault(event)
+    let input1 = document.querySelector('.canvasName').value
+    let input2 = document.querySelector('.canvasTel').value
     if(input1&&input2 !== ""){
         console.log(`success: ${input1} ${input2}`)
     }else{
