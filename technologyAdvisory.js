@@ -1,54 +1,42 @@
 /* OFFCANVAS */
 
-let offButton = document.querySelector('.callback')
+let offCanvasForm = document.getElementById('offCanvasForm')
 
-offButton.onclick = function (event){
+offCanvasForm.onsubmit = function (event){
     event.preventDefault(event)
     let input1 = document.querySelector('.canvasName').value
     let input2 = document.querySelector('.canvasTel').value
-    if(input1&&input2 !== ""){
-        console.log(`success: ${input1} ${input2}`)
-    }else{
-        throw Error('each blanket must be filled')
-    }
+    console.log(`success: ${input1} ${input2}`);
+    offCanvasForm.reset()
 }
 
-/* //ALTERNATIVA PER CREARE UN ARRAY CON COPPIE DI ARRAY [key, value]
-let offButton = document.querySelector('.callback')
-let input1 = document.querySelectorAll('.offCavansLarge')
-
-offButton.onclick = function (event){
-    event.preventDefault()
-    let arr = []
-    input1.forEach((element, i) => arr.push([input1[i].id, input1[i].value]));
-    console.log(arr)
-} */
-
 /* MODALE */
-let modButtom = document.querySelector('.modalButton')
+let modalForm = document.getElementById('modalForm')
 let modalAnswers = document.querySelectorAll('.modalSelect')
+let checkboxAnswer = document.querySelector('.checkboxAnswer')
 
-modButtom.onclick = function (event){
+modalForm.onsubmit = function (event){
     event.preventDefault(event)
     let objModal = {}
-    modalAnswers.forEach((element, i) => objModal[modalAnswers[i].id] = modalAnswers[i].value);
-    let checkboxAnswer = document.querySelector('.checkboxAnswer')
+    modalAnswers.forEach((element) => objModal[element.id] = element.value);
     objModal[checkboxAnswer.id] = checkboxAnswer.checked
-    console.log(objModal)
+    console.log(objModal);
+    modalForm.reset()
 }
 
 /* FORM */
 
-let formButtom = document.querySelector('.formButton')
+let bottomForm = document.getElementById('bottomForm')
 let formAnswers = document.querySelectorAll('.formSelect')
 let checkboxAnswer2 = document.querySelector('.checkboxAnswer2')
 
-formButtom.onclick = function (event){
+bottomForm.onsubmit = function (event){
     event.preventDefault(event)
     let objForm = {}
-    formAnswers.forEach((element, i) => objForm[formAnswers[i].id] = formAnswers[i].value);
+    formAnswers.forEach((element) => objForm[element.id] = element.value);
     objForm[checkboxAnswer2.id] = checkboxAnswer2.checked
-    console.log(objForm)
+    console.log(objForm);
+    bottomForm.reset();
 }
 
 /* COOKIES */

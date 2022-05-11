@@ -104,7 +104,7 @@
           <button type="button" class="btn-close text-white bg-success" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-bottom">
-          <form action="#" method="post" >
+          <form action="#" id="modalForm" method="post" >
             <div class="d-flex justify-content-between align-items-center border-bottom p-1">
               <label for="work" class="text-secondary w-25">I'm a/an</label>
               <select class="form-select w-75 border-0 modalSelect" id="work" aria-label="Default select example">
@@ -172,13 +172,13 @@
         <strong>Phone:</strong><span class="text-success"><a href="#"> 0712 610 33 181</a></span> <br>
         <strong>Mail:</strong><span class="text-success"><a href="mailto:"> info@example.com</a></span> </p>
       </div>
-      <form action="#" method="post" class="mt-5 w-75">
+      <form action="#" id="offCanvasForm" method="post" class="mt-5 w-75">
         <div class="mb-3">
           <label for="name" class="form-label text-secondary">Request a callback</label>
-          <input type="text" class="form-control canvasName offCavansLarge" id="name" name="name" placeholder="Your Name *">
+          <input type="text" class="form-control canvasName offCavansLarge" id="name" name="name" placeholder="Your Name *" required>
         <div class="mb-3">
           <label for="telnumber" class="form-label text-secondary"></label>
-          <input type="tel" class="form-control canvasTel offCavansLarge" id="telnumber" name="telnumber" placeholder="Phone Number *">
+          <input type="tel" class="form-control canvasTel offCavansLarge" id="telnumber" name="telnumber" placeholder="Phone Number *" required>
         </div>
         <button type="submit" class="btn btn-success w-100 m-auto callback">Request a Callback</button>
       </form>
@@ -467,7 +467,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-6 bg-secondary bg-opacity-10">
-        <form action="#" method="post" class="w-75 m-auto animate__animated animate__fadeInUp">
+        <form action="#" id="bottomForm" method="post" class="w-75 m-auto animate__animated animate__fadeInUp">
           <div class="d-flex justify-content-between align-items-center border-bottom p-1 mt-5">
             <label for="work" class="text-secondary w-25">I'm a/an</label>
             <select class="form-select w-75 border-0 bg-secondary bg-opacity-10 formSelect" id="work" aria-label="Default select example">
