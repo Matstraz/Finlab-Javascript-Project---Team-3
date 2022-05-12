@@ -1,0 +1,246 @@
+
+html {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Manrope";
+    line-height: 1.1;
+}
+
+.bg-color-blue {
+    background-color: var(--medium-blue) !important;
+
+
+}
+
+.text{
+    padding-right: 5em;
+}
+
+
+.hover-card-hero:hover{
+    background-color: var(--green);
+    transition: 0.3s;
+}
+
+.triple-card{
+    background-color: var(--high-blue) ;
+}
+
+.triple-card .card-title{
+    color: var(--high-blue) ;
+}
+
+
+/* .nav2 ul li{
+     padding-right: 3.5em; 
+   
+} */
+
+.nav2 ul li a{
+    color: var(--white) !important;
+    font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item{
+    color: var(--medium-blu)!important;
+}
+
+.bgwhite{
+    background-color: var(--white)  !important;
+}
+
+.btn_hover:hover{
+    background-color: var(--super-light-blue) !important;
+}
+
+.span-color-1 {
+    color : var(--light-blue) !important;
+}
+
+.span-color-2 {
+    color : var(--green) !important;
+}
+
+.span-bg-color-2 {
+    background-color : var(--green) !important;
+}
+
+.medium-blue {
+    color: var(--medium-blue) !important;
+}
+
+.high-blue-color{
+    color: var(--high-blue) !important;
+}
+
+.form-control::placeholder {
+    color: var(--super-light-blue);
+    padding-left: 0.5em;
+}
+
+.col-md-6 img{
+    height: 100%;
+    width: 100%;
+}
+
+.h5-page1{
+    color: var(--high-blue)  !important;
+}
+
+.high-blue:hover{
+    background-color: var(--high-blue) !important;
+}
+
+.p-page1{
+    color: var(--light-grey) !important;
+}
+
+.fz-page1{
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.no-border-card{
+    border: none;
+}
+
+
+.page-1-all-cards img:hover{
+    border-bottom: 3px solid var(--green) !important;
+    cursor: pointer;
+}
+
+.plus-circle img{
+    width: 50px;
+    background: var(--high-blue) ;
+    border-radius: 25px;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--high-blue) ;
+}
+
+.bold-2{
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1;
+    color: white ;
+}
+
+.page-1-text{
+    color: var( --super-light-blue) !important;
+}
+
+.no-border-list ul li{
+    border: none !important;
+    cursor: pointer;
+    color: #5C667D !important;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.color-text-blue{
+    color: var(--high-blue) !important;
+}
+
+
+.border-blue{
+    border-bottom: 8px solid var(--high-blue);
+    
+}
+
+
+/* footer */
+footer{
+    background-color: var(--high-blue);
+    
+  }
+
+  li {
+      list-style-type: none;
+      text-decoration: none;
+  }
+
+  li a {
+    text-decoration: none;
+}
+  
+  
+  .foot button.btn{
+    height: 60px;
+    width: 270px!important;
+  }
+  
+  .topfoot{
+    background-image: url(/case-3/asset/map-ft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+  }
+
+  .double-list ul li:hover {
+        color: var(--green) !important;
+  }
+
+  .fs-big-title {
+      font-size: var(--fs) !important; 
+  }
+
+
+  .cards-hover-green img:hover{
+    background:#2cbc63 !important;
+  }
+  
+ .second-text-img{
+   
+ }
+
+
+  /* PALETTE COLORS */
+  :root{
+      
+    --green: #2cbc63;
+    --light-blue: #455680;
+    --medium-blue: #1a4e64;
+    --high-blue: #023a51;
+    --super-light-blue: #5c667d;
+    --white: #ffffff;
+    --light-grey: #a7aeb9;
+    
+    /* CUSTOM FONT SIZE */
+    --fs: 3.5rem;
+}
+
+
+
+
+
+
+
+.fixed-top.navbar-light{
+    background-color: rgb(40, 38, 38);
+    height: 54px;
+  }
+  
+  .text-lime{
+    color:#73b727 ;
+  }
+  
+  .btn-bar{
+    background-color: rgb(111, 174, 16);
+    height: 32px;
+    width: 95px;
+  }
+  
+  .navbar-bottom{
+    margin-top: 54px;
+  }
