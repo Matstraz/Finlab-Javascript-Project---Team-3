@@ -167,6 +167,23 @@ footer a:hover {
     color: #5c667d;
 }
 
+/* cookies */
+.cookies{
+    width: 280px;
+    height: 200px;
+    position: fixed;
+    top: 27rem;
+    left: 1rem;
+}
+
+.cookies p{
+    font-size: small;
+}
+
+
+
+
+
 @media (max-width: 992px) {
     .h-bridge {
         font-size: 30px !important;
