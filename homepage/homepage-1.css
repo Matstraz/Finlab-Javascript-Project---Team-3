@@ -4,7 +4,7 @@ html {
 }
 
 .title {
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     font-family: "Manrope";
     line-height: 1.1;
@@ -65,6 +65,18 @@ html {
     color : var(--green) !important;
 }
 
+.span-bg-color-2 {
+    background-color : var(--green) !important;
+}
+
+.medium-blue {
+    color: var(--medium-blue) !important;
+}
+
+.high-blue-color{
+    color: var(--high-blue) !important;
+}
+
 .form-control::placeholder {
     color: var(--super-light-blue);
     padding-left: 0.5em;
@@ -77,6 +89,10 @@ html {
 
 .h5-page1{
     color: var(--high-blue)  !important;
+}
+
+.high-blue:hover{
+    background-color: var(--high-blue) !important;
 }
 
 .p-page1{
@@ -106,9 +122,16 @@ html {
 
 .bold{
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
     color: var(--high-blue) ;
+}
+
+.bold-2{
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1;
+    color: white ;
 }
 
 .page-1-text{
@@ -177,9 +200,9 @@ footer{
     background:#2cbc63 !important;
   }
   
-  .bg-img-page1{
-      
-  }
+ .second-text-img{
+   
+ }
 
 
   /* PALETTE COLORS */

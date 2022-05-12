@@ -40,11 +40,11 @@
 
 
   <!-- NAVBAR 1 -->
-  <nav class=" navbar bg-color-blue navbar-bottom">
+  <nav class=" navbar bg-color-blue navbar-bottom ">
 
-    <div class="container-xxl px-5 py-2">
+    <div class="container py-2 ">
       <div class="logo d-inline-flex">
-        <img src="/homepage/finlab contents/finlab_logo.png" width="229" height="40">
+        <img src="/homepage/assets/finlab_logo.png" width="229" height="40">
 
         <div class="d-md-none d-lg-none d-xl-inline-flex icons_nav_left mx-4  my-1 w-100 d-flex">
 
@@ -93,144 +93,167 @@
 
 
       <!-- MODAL -->
-      <div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat"
-            viewBox="0 0 16 16">
-            <path
-              d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
-          </svg> Talk an Experts
+      <div class="right-section-icons  d-flex justify-content-between gap-md-2">
 
-        </button>
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success rounded-pill py-2 px-4 span-bg-color-2 d-none d-md-inline-block"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+            </svg> Talk an Experts
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Accordion Item #1
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                        demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content px-3 d-flex justify-content-center  " style="width: 50rem ;">
+                <div class="modal-header py-4">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <span class=" col-3">I'm a/an </span><span class="high-blue-color">Freelancer/Own
+                            Business</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          <span class="col-3">I Want </span>Call me to Discuss my Questions
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body.
+                          Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed pb-5" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          <span class="col-3">I interested</span>Financial Consultant
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                          demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.
+                          Nothing more exciting happening here in terms of content, but just filling up the space to
+                          make
+                          it look, at least at first glance, a bit more representative of how this would look in a
+                          real-world application.</div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                        demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body.
-                        Let's imagine this being filled with some actual content.</div>
+                  <div class="mb-3 px-3">
+                    <label for="modal-name-nav" class="form-label">Your Name *</label>
+                    <input type="text" class="form-control" name="modal-name" id="modal-name-nav"
+                      placeholder="Eg: John Doe" required>
+                  </div>
+                  <div class="row px-3">
+                    <div class="mb-3 col-6 "">
+                    <label for=" exampleFormControlInput1" class="form-label">Your Email *</label required>
+                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@company.com">
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="modal-phone-nav" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" name="modal-phone" id="modal-phone-nav"
+                        placeholder="Full Number ( incl. prefix )" required>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Accordion Item #3
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                        demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.
-                        Nothing more exciting happening here in terms of content, but just filling up the space to make
-                        it look, at least at first glance, a bit more representative of how this would look in a
-                        real-world application.</div>
-                    </div>
+                  <div class="mb-3 py-3 px-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" placeholder="Enter Message" required id="exampleFormControlTextarea1"
+                      rows="3"></textarea>
                   </div>
-                </div>
-                <div class="mb-3">
-                  <label for="modal-name-nav" class="form-label">Your Name *</label>
-                  <input type="text" class="form-control" name="modal-name" id="modal-name-nav">
-                </div>
-                <div class="row">
-                  <div class="mb-3 col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Your Email *</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                      placeholder="name@example.com">
+
+                  <div class=" form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree to receive communications from
+                      FinLab.</label>
                   </div>
-                  <div class="mb-3 col-6">
-                    <label for="modal-phone-nav" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" name="modal-phone" id="modal-phone-nav">
-                  </div>
+
                 </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="modal-footer p-5 d-flex justify-content-start">
+                  <button type="button" class="btn span-bg-color-2 px-5 py-2 rounded-0 text-white">Send Message</button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /MODAL -->
+        <!-- /MODAL -->
 
-      <div>
-        <!-- CARD -->
-        <a href="" class="d-none d-md-block py-2 px-2 bgwhite rounded-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart2"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-          </svg>
-        </a>
-        <!-- /CARD -->
-      </div>
+        <div>
+          <!-- CARD -->
+          <a href="" class="d-none d-md-block py-2 px-2 bgwhite rounded-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg>
+          </a>
+          <!-- /CARD -->
+        </div>
 
-      <div>
-        <!-- SEARCH-->
-        <a href="" class="d-none d-md-block mx-2 bgwhite py-2 px-2 rounded-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-search"
-            viewBox="0 0 16 16">
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-          </svg>
-        </a>
-        <!-- /SEARCH -->
-      </div>
+        <div>
+          <!-- SEARCH-->
+          <a href="" class="d-none d-md-block mx-2 bgwhite py-2 px-2 rounded-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </a>
+          <!-- /SEARCH -->
+        </div>
 
-      <div>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight">Toggle right offcanvas</button>
+        <div>
+          <button class="btn btn-light rounded-circle d-inline-block d-xl-none d-lg-inline-block d-md-inline-block"
+            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26"
+              fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></button>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            ...
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
           </div>
         </div>
-      </div>
 
+
+      </div>
     </div>
+
+
 
   </nav>
   <!-- /NAVBAR 1 -->
@@ -249,7 +272,7 @@
 
               <a class="btn rounded-circle w-100 " style="background-color: white; " data-bs-toggle="offcanvas"
                 href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <img src="/homepage/finlab contents/list.svg" width="20">
+                <img src="/homepage/assets/list.svg" width="20">
               </a>
 
               <!-- DROPDOWN 1 -->
@@ -259,8 +282,16 @@
                 HomePage
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Home 1</a></li>
-                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Home 1</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Home 2</span></a></li>
 
               </ul>
             </li>
@@ -274,11 +305,31 @@
                 Who We Are
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">About Us</a></li>
-                <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
-                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
-                <li><a class="dropdown-item" href="#">Our History</a></li>
-                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>About Us</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Our Leadership Team</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Why Choose Us</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Our History</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Careers</span></a></li>
               </ul>
             </li>
             <!-- /DROPDOWN 2 -->
@@ -290,9 +341,21 @@
                 What We Do
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Action </span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Another action </span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Something else here</span></a></li>
               </ul>
             </li>
             <!-- /DROPDOWN 3 -->
@@ -304,28 +367,40 @@
                 Case Studies
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Action </span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Another action </span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="high-blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Something else here </span></a></li>
               </ul>
             </li>
             <!-- /DROPDOWN 4 -->
 
             <!-- li 1-3 -->
             <li>
-              <a class="nav-link" aria-current="page" href="#">Blog & Insights</a>
+              <a class="nav-link" aria-current="page" href="#">Blog & Insights </span></a>
             </li>
             <!-- /li 1-3 -->
 
             <!-- li 2-3 -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="#">Shop </span></a>
             </li>
             <!-- /li 2-3 -->
 
             <!-- li 3-3 -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us </span></a>
             </li>
             <!-- /li 3-3 -->
 
@@ -349,7 +424,7 @@
     </div>
     <div class="offcanvas-body">
       <div class="img-canvas w-100 mb-5">
-        <img class="w-100 px-4" src="/homepage/finlab contents/c4-825x550.jpeg" style="height: 165px;">
+        <img class="w-100 px-4" src="/homepage/assets/c4-825x550.jpeg" style="height: 165px;">
       </div>
 
       <div class="px-4 mb-4" style="color: #989ead">
@@ -388,7 +463,7 @@
 
 
   <!-- CAROUSEL -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" style="height: 100vh;" class="carousel slide " data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -398,41 +473,52 @@
         aria-label="Slide 3"></button>
     </div>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/homepage/finlab contents/slider1.jpeg" class="d-block w-100" alt="...">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="/homepage/assets/slider1.jpeg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption h-100 w-100 d-flex justify-content-center align-items-center">
 
           <div class="title d-flex flex-column justify-content-center text-start">
-            <p>Trusted <br> Commercial <br> Finance Broker</p>
+            <!-- LESS 1080p -->
+            <p class="d-xl-none d-lg-none d-xxl-none bold text-white ">Trusted <br> Commercial <br> Finance Broker</p>
+            <!-- /LESS 1080p -->
+            <p class="d-md-none d-sm-none d-lg-block d-none bold-2">Trusted <br> Commercial <br> Finance Broker</p>
             <button class="btn d-flex justify-content-start"><img
                 style="background-color: #2cbc63 !important; padding: 15px; border-radius: 50%;"
-                src="/homepage/finlab contents/arrow-right-circle.svg"></i></button>
+                src="/homepage/assets/arrow-right-circle.svg"></i></button>
           </div>
         </div>
       </div>
 
-      <div class="carousel-item">
-        <img src="/homepage/finlab contents/slider2.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-item h-100">
+        <img src="/homepage/assets/slider2.jpeg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption h-100 w-100 d-flex justify-content-center align-items-center">
 
           <div class="title d-flex flex-column justify-content-center text-start">
-            <p>Provides <br> Professional <br> Services</p>
+            <!-- LESS 1080p -->
+            <p class="d-xl-none d-lg-none d-xxl-none bold text-white">Provides <br> Professional <br> Services</p>
+            <!-- /LESS 1080p -->
+            <p class="d-md-none d-sm-none d-lg-block d-none bold-2">Provides <br> Professional <br> Services</p>
             <button class="btn d-flex justify-content-start"><img
                 style="background-color: #2cbc63 !important; padding: 15px; border-radius: 50%;"
-                src="/homepage/finlab contents/arrow-right-circle.svg"></i></button>
+                src="/homepage/assets/arrow-right-circle.svg"></i></button>
           </div>
+
         </div>
       </div>
 
-      <div class="carousel-item">
-        <img src="/homepage/finlab contents/slider2.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-item h-100">
+        <img src="/homepage/assets/slider2.jpeg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption h-100 w-100 d-flex justify-content-center align-items-center">
+
           <div class="title d-flex flex-column justify-content-center text-start">
-            <p>Understand <br> Your Business <br> Model</p>
+            <!-- LESS 1080p -->
+            <p class="d-xl-none d-lg-none d-xxl-none bold text-white">Understand <br> Your Business <br> Model</p>
+            <!-- /LESS 1080p -->
+            <p class="d-md-none d-sm-none d-lg-block d-none bold-2">Understand <br> Your Business <br> Model</p>
             <button class="btn d-flex justify-content-start "><img
                 style="background-color:#2cbc63 !important; padding: 15px; border-radius: 50%;"
-                src="/homepage/finlab contents/arrow-right-circle.svg"></i></button>
+                src="/homepage/assets/arrow-right-circle.svg"></i></button>
           </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -460,7 +546,7 @@
       <div class="row d-flex flex-wrap justify-content-md-between">
 
 
-        <div class="col-lg-4 col-12 col-sm-12 col-md-6 d-flex justify-content-center ">
+        <div class="col-lg-6 col-xl-4 col-12 col-sm-12 col-md-6 flex-wrap d-flex justify-content-center ">
           <div class=" no-border-card card mb-3" style="max-width: 540px; border: none;">
             <div class="row g-0">
 
@@ -471,14 +557,14 @@
               </div>
 
               <div class="col-md-6">
-                <img src="/homepage/finlab contents/i1.jpeg" class="img-fluid" alt="...">
+                <img src="/homepage/assets/i1.jpeg" class="img-fluid" alt="...">
               </div>
             </div>
           </div>
 
         </div>
 
-        <div class="col-lg-4 col-sm-12 col-md-6  ">
+        <div class="col-lg-6 col-xl-4 col-sm-12 col-md-6  ">
           <div class=" card mb-3" style="max-width: 540px;">
             <div class="row g-0">
 
@@ -491,14 +577,14 @@
               </div>
 
               <div class="col-md-6">
-                <img src="/homepage/finlab contents/i2.jpeg" class="img-fluid" alt="...">
+                <img src="/homepage/assets/i2.jpeg" class="img-fluid" alt="...">
               </div>
             </div>
           </div>
 
         </div>
 
-        <div class="col-lg-4 col-sm-12 col-md-6  ">
+        <div class="col-lg-6 col-xl-4 col-sm-12 col-md-6  ">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
 
@@ -509,7 +595,7 @@
               </div>
 
               <div class="col-md-6 ">
-                <img src="/homepage/finlab contents/i3.jpeg" class="img-fluid" alt="...">
+                <img src="/homepage/assets/i3.jpeg" class="img-fluid" alt="...">
               </div>
             </div>
           </div>
@@ -526,8 +612,11 @@
 
     <div class="row ">
 
-      <div class="col-12 col-lg-6 col-md-12 fs-1 px-5"><b class="fs-5 span-color-2 px-3 ">SERVICES WE PROVIDE</b> <span
-          class="bold"> <br> Trusted<br>
+      <div class="col-12 col-lg-6 col-md-12 fs-1 px-5"><b class="fs-5 span-color-2 px-1 "><svg
+            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2cbc63" class="bi bi-dot"
+            viewBox="0 0 16 16">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg> SERVICES WE PROVIDE</b> <span class="bold"> <br> Trusted<br>
           Commercial<br> Finance Broker. </span>
       </div>
       <div class="col-12 col-md-8 col-lg-3 py-5">
@@ -549,13 +638,13 @@
 
 
     <!-- PAGE 1 IMGAGES -->
-    <div class="container mt-5">
-      <div style="cursor:pointer" class="row py-2 ">
+    <div class="container mt-5 ">
+      <div style="cursor:pointer" class="row py-2 border-1 border-bottom ">
 
-        <div class="col-lg-4 p-sm-3 d-flex justify-content-center">
+        <div class="col-lg-4 col-sm-4 p-sm-3 d-flex justify-content-center">
 
           <div class="cards-hover-green card no-border-card" style="width: 24rem;">
-            <img class="card-img-top" src="/homepage/finlab contents/page1-first.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/homepage/assets/page1-first.jpg" alt="Card image cap">
             <div class="card-body d-flex justify-content-center">
               <div class="text-page1 d-flex flex-column">
                 <h5 class="card-title h5-page1">ACCOUNTING SERVICES</h5>
@@ -565,9 +654,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 p-sm-3 d-flex justify-content-center">
+        <div class="col-lg-4 col-sm-4 p-sm-3 d-flex justify-content-center">
           <div class="card no-border-card" style="width: 24rem;">
-            <img class="card-img-top" src="/homepage/finlab contents/page1-second.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/homepage/assets/page1-second.jpg" alt="Card image cap">
             <div class="card-body d-flex justify-content-center">
               <div class="text-page1 d-flex flex-column">
                 <h5 class="card-title h5-page1 text-center">TAX SERVICES</h5>
@@ -577,9 +666,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 p-sm-3 d-flex justify-content-center">
+        <div class="col-lg-4 col-sm-4 p-sm-3 d-flex justify-content-center ">
           <div class="card no-border-card" style="width: 24rem;">
-            <img class="card-img-top" src="/homepage/finlab contents/page1-third.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/homepage/assets/page1-third.jpg" alt="Card image cap">
             <div class="card-body d-flex justify-content-center">
               <div class="text-page1 d-flex flex-column">
                 <h5 class="card-title h5-page1 text-center">FINANCIAL CONSULTANT</h5>
@@ -594,21 +683,21 @@
 
       <!-- PAGE 1 IMAGES-2 -->
       <div class="container mt-5">
-        <div class="row justify-content-between">
+        <div class="row justify-content-md-between justify-content-center">
 
-          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
-              src="/homepage/finlab contents/little-icons/1.png"></div>
-          <div class="col-2 col-md-6 p-1 col-lg-2  page-1-all-cards"><img
-              src="/homepage/finlab contents/little-icons/2.png"> </div>
-          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
-              src="/homepage/finlab contents/little-icons/3.png"> </div>
-          <div class="col-2 col-md-6 p-1 col-lg-2 page-1-all-cards"><img
-              src="/homepage/finlab contents/little-icons/4.png"></div>
-          <div class="col-2 col-md-6 col-lg-2 align-items-md-center p-1 page-1-all-cards"><img
-              src="/homepage/finlab contents/little-icons/5.png"> </div>
+          <div class="col-6 col-md-6 p-1 col-lg-2 page-1-all-cards"><img src="/homepage/assets/little-icons/1.png">
+          </div>
+          <div class="col-6 col-md-6 p-1 col-lg-2  page-1-all-cards"><img src="/homepage/assets/little-icons/2.png">
+          </div>
+          <div class="col-6 col-md-6 p-1 col-lg-2 page-1-all-cards"><img src="/homepage/assets/little-icons/3.png">
+          </div>
+          <div class="col-6 col-md-6 p-1 col-lg-2 page-1-all-cards"><img src="/homepage/assets/little-icons/4.png">
+          </div>
+          <div class="col-6 col-md-6 col-lg-2 align-items-md-center p-1 page-1-all-cards"><img
+              src="/homepage/assets/little-icons/5.png"> </div>
 
-          <h5 class="text-center mt-5 pb-5"><span class="plus-circle px-3 "><img style="cursor: pointer;"
-                src="/homepage/finlab contents/plus-circle.svg"></span>View All Services</h5>
+          <h5 class="text-center mt-5 pb-3"><span class="plus-circle px-3 "><img style="cursor: pointer;"
+                src="/homepage/assets/plus-circle.svg"></span>View All Services</h5>
         </div>
       </div>
       <!-- /PAGE 1 IMAGES-2 -->
@@ -617,76 +706,95 @@
 
     <!-- PAGE 2 TEXT  -->
     <div class="container pb-5 ">
-      <div class="row gap-2 ">
-        <div class="d-md-block d-lg-flex page-2-text d-flex text-center ">
-          <div class="col-lg-5 col-md-12 text-md-center ms-lg-3 text-lg-start">
-            <p class="bold"><b class="fs-5 span-color-2 px-xl-2 ">INDUSTRIES WE SERVE <br> </b> Broad Knowledge <br>
-              Base. Deep <br> Insights.</p>
-          </div>
-          <div class="double-list col-lg-7 d-flex mt-lg-4 ">
-            <div class="no-border-list pb-5 ">
-              <ul class="list-group px-5 mx-5 border-1 border-top py-2">
-                <li class="list-group-item text-start ">Automotive / Aviation</li>
-                <li class="list-group-item text-start ">Manufacturing & Industrial</li>
-                <li class="list-group-item text-start ">Real Estate</li>
-                <li class="list-group-item text-start ">Media & Entertainment</li>
-                <li class="list-group-item text-start ">Social & Public Sector</li>
-              </ul>
-            </div>
 
-            <div class="no-border-list pb-5 border-1 border-top">
-              <ul class="list-group py-2">
-                <li class="list-group-item text-start">Retail & Ecommerce</li>
-                <li class="list-group-item text-start">Human Resources</li>
-                <li class="list-group-item text-start">Medical & Healthcare</li>
-                <li class="list-group-item text-start">Banking / Finance / Insurance</li>
-                <li class="list-group-item text-start">Machinery & Equipment</li>
-              </ul>
-            </div>
+
+      <div class="row w-100 align-items-center">
+
+        <div class="col-lg-4 col-xl-6 col-md-12 col-sm-12 col-xs-12 mb-1">
+          <div class="text-md-start text-center ms-lg-3 text-lg-start">
+            
+            <p class="mb-1 span-color-2 px-1"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+              height="40" fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>   
+            INDUSTRIES WE SERVE 
+          </p> 
+          
+          <p class="fs-1 d-lg-none ">Broad Knowledge
+              Base. Deep Insights.
+            </p>
+            <p class="bold d-none d-lg-block ">Broad Knowledge
+              Base. Deep Insights.
+            </p>
+
           </div>
+        </div>
+
+        <div class="no-border-list col-lg-4 col-xl-3 col-md-6 col-sm-12 col-xs-12 border-1 border-top">
+          <ul class="list-group my-2">
+            <li class="list-group-item text-start">Automotive / Aviation</li>
+            <li class="list-group-item text-start">Manufacturing & Industrial</li>
+            <li class="list-group-item text-start">Real Estate</li>
+            <li class="list-group-item text-start">Media & Entertainment</li>
+            <li class="list-group-item text-start">Social & Public Sector</li>
+          </ul>
+        </div>
+
+
+        <div class="no-border-list text-center col-lg-4 col-xl-3 col-md-6 col-sm-12 col-xs-12 border-1 border-top ">
+          <ul class="list-group my-2">
+            <li class="list-group-item text-start">Retail & Ecommerce</li>
+            <li class="list-group-item text-start">Human Resources</li>
+            <li class="list-group-item text-start">Medical & Healthcare</li>
+            <li class="list-group-item text-start">Banking / Finance / Insurance</li>
+            <li class="list-group-item text-start">Machinery & Equipment</li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- /PAGE 2 TEXT -->
+
+  </div>
+  </div>
+  <!-- /PAGE 2 TEXT -->
   </div>
 
   <!-- PAGE 2 IMAGES -->
   <div class="all-cards d-flex flex-wrap container">
 
-    <div class="row gy-4">
+    <div class="row gy-3">
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c6-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c6-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c5-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c5-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c4-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c4-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c3-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c3-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c2-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c2-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-3">
         <div class="card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/c1-825x550.jpeg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/c1-825x550.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
 
@@ -716,9 +824,9 @@
   <!-- PAGE 3 TEXT - SECOND TEXT - THIRD TEXT-->
   <!-- 1 TEXT -->
   <div class="container py-3">
-    <div class="row flex-md-wrap">
+    <div class="row flex-md-wrap justify-content-lg-center">
 
-      <div class="col-lg-4 px-5">
+      <div class="col-lg-4 col-md-6 px-5">
         <p class="page-1-text fs-4">01.</p>
         <h2 class="span-color-2">Experienced.</h2>
         <p class="page-1-text py-1">Having lived many “Financial Lives” we know what works and what doesn’t. Experience
@@ -726,7 +834,7 @@
           “bear” market.</p>
       </div>
 
-      <div class="col-lg-4 px-5">
+      <div class="col-lg-4 col-md-6 px-5">
         <p class="page-1-text fs-4">02.</p>
         <h2 class="span-color-2">Convenience.</h2>
         <p class="page-1-text py-1">You experience personal convenient service with no long phone holds or voice mail.
@@ -734,7 +842,7 @@
           communicate with as possible.</p>
       </div>
 
-      <div class="col-lg-4 px-5">
+      <div class="col-lg-4 col-md-6  px-5">
         <p class="page-1-text fs-4">03.</p>
         <h2 class="span-color-2"> Support.</h2>
         <p class="page-1-text py-1">We have a pro-active mindset in regards to client service. Our focus is on
@@ -753,10 +861,13 @@
   <!-- SECOND TEXT -->
   <div class="container py-4">
     <div class="row border-blue">
-      <div class="col-lg-6 "><img src="/homepage/finlab contents/img-pp.png"></div>
+      <div class="col-lg-6"><img class="w-100" src="/homepage/assets/img-pp.png"></div>
       <div class="col-lg-6">
 
-        <p class="fs-6 span-color-2 fw-bold">OUR PEOPLE</p>
+        <p class="fs-6 span-color-2 fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+            fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>OUR PEOPLE</p>
         <h1 style="color: #023a51;" class="fs-big-title ">Meet the <br> Executive Team</h1>
 
         <div class="d-flex justify-content-between py-4 border-1 border-bottom">
@@ -789,7 +900,7 @@
         </div>
 
         <div style="cursor:pointer;" class="plus-circle px-3 py-5 "><img class=""
-            src="/homepage/finlab contents/plus-circle.svg"><span class="ps-3">Learn How We Can Help</span></div>
+            src="/homepage/assets/plus-circle.svg"><span class="ps-3">Learn How We Can Help</span></div>
 
       </div>
     </div>
@@ -797,7 +908,10 @@
 
   <div class="container">
     <div class="d-flex justify-content-between">
-      <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3">BOLD IDEAS AND EXTRAORDINARY TEAMS</p>
+      <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3"><svg xmlns="http://www.w3.org/2000/svg"
+          width="40" height="40" fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+        </svg>BOLD IDEAS AND EXTRAORDINARY TEAMS</p>
       <p style="color: #a7aeb9; cursor: pointer;" class="fw-bolder">Get to know our Experts</p>
     </div>
 
@@ -809,7 +923,7 @@
 
       <div class="col-lg-4">
         <div class="card no-border-card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap1.jpg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/Bitmap1.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body">
             <h5 class="card-title text-center">LARRY SWANK</h5>
             <p class="card-text text-center">We’ll match you with an advisor</p>
@@ -820,7 +934,7 @@
 
       <div class="col-lg-4">
         <div class="card no-border-card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap2.jpg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/Bitmap2.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body text-center">
             <h5 class="card-title">ARCHANA DESKUS</h5>
             <p class="card-text text-center">We’ll match you with an advisor</p>
@@ -831,7 +945,7 @@
 
       <div class="col-lg-4">
         <div class="card no-border-card">
-          <img style="cursor:pointer;" src="/homepage/finlab contents/Bitmap3.jpg" class="card-img-top" alt="...">
+          <img style="cursor:pointer;" src="/homepage/assets/Bitmap3.jpg" class="card-img-top" alt="...">
           <div style="cursor: pointer;" class="card-body text-center">
             <h5 class="card-title">DANIEL JAMES</h5>
             <p class="card-text text-center">We’ll match you with an advisor</p>
@@ -852,14 +966,13 @@
   <!-- FIRST STRUCTURE -->
   <div class="container border-3 border-bottom">
 
-    <div class="text-center"><img src="/homepage/finlab contents/little-icons/dividors.png"></div>
+    <div class="text-center"><img src="/homepage/assets/little-icons/dividors.png"></div>
     <h1 class="text-center py-3 pb-3">"Your company has provided consistent, high quality, accounting support during the
       exponential growth we have experienced over the past two years"</h1>
-    <h6 class="text-center py-5"><span
-        style="background-color: #e0ecf0; padding: 0.4em 1.5em; border-radius: 1em; color: #485972; cursor: pointer;">JOHN
-        DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS </span></h6>
+    <h6 class="text-center mt-5"><span class="px-1" style="background-color: #a7aeb9; border-radius: 10px;">JOHN DOE,
+        GROUP HEAD OF DIGITAL COMMUNICATIONS</span></h6>
     <div class="d-flex justify-content-center py-5">
-      <img style="cursor:pointer;" src="/homepage/finlab contents/page-4-group.png" class="w-75">
+      <img style="cursor:pointer;" src="/homepage/assets/page-4-group.png" class="w-100">
     </div>
   </div>
   <!-- /FIRST STRUCTURE -->
@@ -869,17 +982,20 @@
   <!-- SECOND STRUCTURE -->
   <div class="container py-4">
     <div class="d-flex justify-content-between">
-      <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3">FROM OUR BLOG – FINANCE NEWS AND GUIDELINES</p>
+      <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3"><svg xmlns="http://www.w3.org/2000/svg"
+          width="40" height="40" fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+        </svg>FROM OUR BLOG – FINANCE NEWS AND GUIDELINES</p>
       <p style="color: #a7aeb9; cursor: pointer;" class="fw-bolder">See More All Posts</p>
     </div>
   </div>
 
   <div class="container" style="cursor:pointer">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
 
-      <div class="col-lg-3 col-md-6 px-md-1">
+      <div class="col-lg-3 col-12 col-md-6 px-md-1">
         <div class="card no-border-card">
-          <img src="/homepage/finlab contents/page4-second-structure/1-image.jpg" class="card-img-top" alt="...">
+          <img src="/homepage/assets/page4-second-structure/1-image.jpg" class="card-img-top" alt="...">
 
           <div class="card-body text-center">
             <p class="text-start color-text-blue fw-bold">How To Get Back On Track With <br>Your Finances</p>
@@ -887,7 +1003,7 @@
           </div>
 
           <div class="card no-border-card">
-            <img src="/homepage/finlab contents/page4-second-structure/2-image.jpg" class="card-img-top" alt="...">
+            <img src="/homepage/assets/page4-second-structure/2-image.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <p class="text-start color-text-blue fw-bold">What is Bitcoin, How to Buy & How Transaction Works</p>
               <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
@@ -897,18 +1013,18 @@
         </div>
       </div>
 
-      <div class="col-lg-4 px-md-1">
-        <div class="card no-border-card d-md-none d-lg-block d-xl-block ">
-          <img src="/homepage/finlab contents/page4-second-structure/3-image.jpg" class="card-img-top" alt="...">
+      <div class="col-lg-3 col-12 d-md-none d-lg-block col-lg-6 px-md-1 px-md-1">
+        <div class="card no-border-card d-lg-block d-xl-block ">
+          <img src="/homepage/assets/page4-second-structure/3-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-12 col-md-6 px-md-1">
 
         <div class="card no-border-card">
-          <img src="/homepage/finlab contents/page4-second-structure/4-image.jpg" class="card-img-top" alt="...">
+          <img src="/homepage/assets/page4-second-structure/4-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
             <p class="text-start color-text-blue fw-bold">9 Types Of Insurance You Need But May Not Have</p>
             <p class="text-start page-1-text">Posted by 21lab.co Sep 22, 2021</p>
@@ -916,7 +1032,7 @@
         </div>
 
         <div class="card no-border-card">
-          <img src="/homepage/finlab contents/page4-second-structure/5-image.jpg" class="card-img-top" alt="...">
+          <img src="/homepage/assets/page4-second-structure/5-image.jpg" class="card-img-top" alt="...">
           <div class="card-body text-center">
 
             <p class="text-start color-text-blue fw-bold"> 6 Things To Do Now If You Have <br> No Savings</p>
@@ -931,7 +1047,10 @@
 
     <div class="container py-4 border-1 border-top">
       <div class="d-flex justify-content-between">
-        <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3">SOME A FEW OF OUR CLIENTS, PARTNERS &
+        <p style="color: #1a4e64; cursor: pointer;" class="fw-bolder px-3"><svg xmlns="http://www.w3.org/2000/svg"
+            width="40" height="40" fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>SOME A FEW OF OUR CLIENTS, PARTNERS &
           ACCREDITATIONS
         </p>
         <p style="color: #a7aeb9; cursor: pointer;" class="fw-bolder">Become a Partner</p>
