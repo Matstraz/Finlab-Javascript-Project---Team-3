@@ -108,6 +108,11 @@ a:hover {
     background-color: #2CBC63;
 }
 
+.btn-circle {
+    width: 43px;
+    height: 43px;
+}
+
 
 /* navbar-2 */
 .nav-drop a:hover,
@@ -166,6 +171,23 @@ a:hover {
 footer a:hover {
     color: #5c667d;
 }
+
+/* cookies */
+.cookies{
+    width: 280px;
+    height: 200px;
+    position: fixed;
+    top: 27rem;
+    left: 1rem;
+}
+
+.cookies p{
+    font-size: small;
+}
+
+
+
+
 
 @media (max-width: 992px) {
     .h-bridge {
