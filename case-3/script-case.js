@@ -9,9 +9,9 @@ class Form {
 
 
 
-const formLog = document.getElementById('btn-form--submit');
+const formLog = document.getElementById('recall');
 
-formLog.addEventListener('click', (event) => {
+formLog.addEventListener('submit', (event) => {
   event.preventDefault();
   const formCallback = new Form(document.getElementById('form-firstName-body').value, document.getElementById('form-phoneNumber-body').value);
   console.log(formCallback);
@@ -35,9 +35,9 @@ class Modal {
   }
 }
 
-const modalNav = document.getElementById('btn-modal--submit');
+const modalNav = document.getElementById('modal-form');
 
-modalNav.addEventListener('click', (event) => {
+modalNav.addEventListener('submit', (event) => {
   event.preventDefault();
   const modalLog = new Modal(
     document.getElementById('modal-cont-1').value,
@@ -49,6 +49,7 @@ modalNav.addEventListener('click', (event) => {
     document.getElementById('modal-message').value,
     document.getElementById('checkbox-modal').checked
   );
+  modalNav.reset();
   console.log(modalLog);
 })
 

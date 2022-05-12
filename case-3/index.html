@@ -100,71 +100,76 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
-                <!---------------------------close modal button-->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <!--------modal body content -->
-              <form class="modal-body d-flex flex-column  gap-4">
+              <form class="d-flex flex-column gap-4 px-5 py-2" action="post" method="post" id="modal-form">
+                <div class="modal-header">
+                  <!---------------------------close modal button-->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--------modal body content -->
+
                 <!-----------------content 1-------------->
                 <div class="field d-flex border-1 border-bottom">
-                 <label class="col-3" for="">I'm a/an</label>
-                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-1">
-                  <option value="Freelancer/Own business">Freelancer/Own business</option>
-                  <option value="Other options">Other options</option>
-                </select>
-              </div>
+                  <label class="col-3" for="">I'm a/an</label>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-1">
+                    <option value="Freelancer/Own business">Freelancer/Own business</option>
+                    <option value="Other options">Other options</option>
+                  </select>
+                </div>
                 <!---------------------content 2-------->
                 <div class="field d-flex border-1 border-bottom">
                   <label class="col-3" for="">I Want</label>
-                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-2">
-                  <option value="Call me to Discuss my Questions">Call me to Discuss my Questions</option>
-                  <option value="Email me your digital prospectus">Email me your digital prospectus</option>
-                  <option value="Mail me your full information pack">Mail me your full information pack</option>
-                </select>
-              </div>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-2">
+                    <option value="Call me to Discuss my Questions">Call me to Discuss my Questions</option>
+                    <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                    <option value="Mail me your full information pack">Mail me your full information pack</option>
+                  </select>
+                </div>
                 <!-----content  3----------->
                 <div class="field d-flex border-1 border-bottom">
                   <label class="col-3" for="">I interested</label>
-                <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example" id="modal-cont-3">
-                  <option value="Financial Consultant">Financial Consultant</option>
-                  <option value="Accounting Services">Accounting Services</option>
-                  <option value="Tax Services">Tax Services</option>
-                  <option value="Careers">Careers</option>
-                  <option value="Request Additional Information">Request Additional Information</option>
-                </select>
-              </div>
-                <form class="d-flex flex-column gap-2" action="post" method="post" id="modal-form">
-                  <!----------------modal name label-->
-                  <div class="field d-flex flex-column">
-                    <label for="modal-name" class="form-label">Your Name *</label>
-                    <input class="col-12 form-control" type="text" name="modal-name" id="modal-name" required>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-3">
+                    <option value="Financial Consultant">Financial Consultant</option>
+                    <option value="Accounting Services">Accounting Services</option>
+                    <option value="Tax Services">Tax Services</option>
+                    <option value="Careers">Careers</option>
+                    <option value="Request Additional Information">Request Additional Information</option>
+                  </select>
+                </div>
+
+                <!----------------modal name label-->
+                <div class="field d-flex flex-column">
+                  <label for="modal-name" class="form-label">Your Name *</label>
+                  <input class="col-12 form-control" type="text" name="modal-name" id="modal-name" required>
+                </div>
+                <!----------------modal email and Phone label-->
+                <div class="field row">
+                  <div class="col-6">
+                    <label for="modal-email" class="form-label">Email *</label>
+                    <input class="form-control" type="email" name="modal-email" id="modal-email" required>
                   </div>
-                  <!----------------modal email and Phone label-->
-                  <div class="field row">
-                    <div class="col-6">
-                      <label for="modal-email" class="form-label">Email *</label>
-                      <input class="form-control" type="email" name="modal-email" id="modal-email" required>
-                    </div>
-                    <div class="col-6">
-                      <label for="modal-phone" class="form-label">Phone Number *</label>
-                      <input class="form-control" type="tel" name="modal-phone" id="modal-phone" required>
-                    </div>
+                  <div class="col-6">
+                    <label for="modal-phone" class="form-label">Phone Number *</label>
+                    <input class="form-control" type="tel" name="modal-phone" id="modal-phone" required>
                   </div>
-                  <!----------------modal message label-->
-                  <div class="field d-flex flex-column">
-                    <label for="modal-message" class="form-label">Message</label>
-                    <textarea name="modal-message" id="modal-message" cols="35" rows="2" required></textarea>
-                  </div>
-                  <div class="field">
-                    <input type="checkbox" name="checkbox-modal" id="checkbox-modal" required>
-                    <label for="checkbox-modal">I agree to receive communications from FinLab.</label>
-                  </div>
-                  <div class="field">
-                    <button class="btn btn-success col-4 mt-2" type="submit" id="btn-modal--submit">Send Message</button>
-                  </div>
-                </form>
+                </div>
+                <!----------------modal message label-->
+                <div class="field d-flex flex-column">
+                  <label for="modal-message" class="form-label">Message</label>
+                  <textarea name="modal-message" id="modal-message" cols="35" rows="2" required></textarea>
+                </div>
+                <div class="field">
+                  <input type="checkbox" name="checkbox-modal" id="checkbox-modal" required>
+                  <label for="checkbox-modal">I agree to receive communications from FinLab.</label>
+                </div>
+                <div class="field">
+                  <button class="btn btn-success col-4 mt-2" type="submit" id="btn-modal--submit">Send
+                    Message</button>
+                </div>
               </form>
+
 
             </div>
           </div>
@@ -654,25 +659,26 @@
     <!--FINE-->
   </main>
 
-<!---------------------cookies-------------->
+  <!---------------------cookies-------------->
 
-<div class="cookies text-center bg-white border-dark border p-2">
-  <h6 class="text-center"><strong>Cookies</strong></h6>
-  <p>We use cookies to help personalize content and provide a better experience. By selencting yes, you agree this.</p>
-  <form action="#" method="post" class="d-flex flex-column">
-    <div class="d-flex justify-content-evenly">
-      <div>
-        <input id="acceptCookies" type="radio" name="cookies" value="yes" class="yesCookies">
-        <label for="acceptCookies">Yes</label>
+  <div class="cookies text-center bg-white border-dark border p-2">
+    <h6 class="text-center"><strong>Cookies</strong></h6>
+    <p>We use cookies to help personalize content and provide a better experience. By selencting yes, you agree this.
+    </p>
+    <form action="#" method="post" class="d-flex flex-column">
+      <div class="d-flex justify-content-evenly">
+        <div>
+          <input id="acceptCookies" type="radio" name="cookies" value="yes" class="yesCookies">
+          <label for="acceptCookies">Yes</label>
+        </div>
+        <div>
+          <input id="acceptCookies" type="radio" name="cookies" value="no" class="noCookies">
+          <label for="acceptCookies">no</label>
+        </div>
       </div>
-      <div>
-        <input id="acceptCookies" type="radio" name="cookies" value="no" class="noCookies">
-        <label for="acceptCookies">no</label>
-      </div>
-    </div>
-    <button type="submit" class="w-75 m-auto mt-3 bg-success cookiesButton" >Send</button>
-  </form>
-</div>
+      <button type="submit" class="w-75 m-auto mt-3 bg-success cookiesButton">Send</button>
+    </form>
+  </div>
 
   <!----------------------------------Footer --------------------->
 
