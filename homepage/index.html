@@ -19,6 +19,8 @@
 
 
 
+
+
 </head>
 
 <body>
@@ -116,93 +118,81 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item ">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          <span class=" col-3">I'm a/an </span><span class="high-blue-color">Freelancer/Own
-                            Business</span>
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                          demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          <span class="col-3">I Want </span>Call me to Discuss my Questions
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                          demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body.
-                          Let's imagine this being filled with some actual content.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed pb-5" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseThree" aria-expanded="false"
-                          aria-controls="flush-collapseThree">
-                          <span class="col-3">I interested</span>Financial Consultant
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                          demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.
-                          Nothing more exciting happening here in terms of content, but just filling up the space to
-                          make
-                          it look, at least at first glance, a bit more representative of how this would look in a
-                          real-world application.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-3 px-3">
-                    <label for="modal-name-nav" class="form-label">Your Name *</label>
-                    <input type="text" class="form-control" name="modal-name" id="modal-name-nav"
-                      placeholder="Eg: John Doe" required>
-                  </div>
-                  <div class="row px-3">
-                    <div class="mb-3 col-6 "">
-                    <label for=" exampleFormControlInput1" class="form-label">Your Email *</label required>
-                      <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@company.com">
-                    </div>
-                    <div class="mb-3 col-6">
-                      <label for="modal-phone-nav" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" name="modal-phone" id="modal-phone-nav"
-                        placeholder="Full Number ( incl. prefix )" required>
-                    </div>
-                  </div>
-                  <div class="mb-3 py-3 px-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" placeholder="Enter Message" required id="exampleFormControlTextarea1"
-                      rows="3"></textarea>
-                  </div>
+                  
+                  <!-----------------content 1-------------->
+                <div class="field d-flex border-1 border-bottom">
+                  <label class="col-3" for="">I'm a/an</label>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-1">
+                    <option value="Freelancer/Own business">Freelancer/Own business</option>
+                    <option value="Other options">Other options</option>
+                  </select>
+                </div>
+                <!---------------------content 2-------->
+                <div class="field d-flex border-1 border-bottom">
+                  <label class="col-3" for="">I Want</label>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-2">
+                    <option value="Call me to Discuss my Questions">Call me to Discuss my Questions</option>
+                    <option value="Email me your digital prospectus">Email me your digital prospectus</option>
+                    <option value="Mail me your full information pack">Mail me your full information pack</option>
+                  </select>
+                </div>
+                <!-----content  3----------->
+                <div class="field d-flex border-1 border-bottom">
+                  <label class="col-3" for="">I interested</label>
+                  <select class="form-select form-select-lg border-0" aria-label=".form-select-lg example"
+                    id="modal-cont-3">
+                    <option value="Financial Consultant">Financial Consultant</option>
+                    <option value="Accounting Services">Accounting Services</option>
+                    <option value="Tax Services">Tax Services</option>
+                    <option value="Careers">Careers</option>
+                    <option value="Request Additional Information">Request Additional Information</option>
+                  </select>
+                </div>
 
-                  <div class=" form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">I agree to receive communications from
-                      FinLab.</label>
-                  </div>
+
+                  
+                  <form id="modalForm">
+                    <div class="mb-3 px-3">
+                      <label for="modal-name-nav" class="form-label">Your Name *</label>
+                      <input type="text" class="form-control" name="modal-name" id="js-input-2"
+                        placeholder="Eg: John Doe" required>
+                    </div>
+                    <div class="row px-3">
+                      <div class="mb-3 col-6 "">
+                    <label for=" exampleFormControlInput1" class="form-label">Your Email *</label required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                          placeholder="name@company.com">
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="modal-phone-nav" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" name="modal-phone" id="js-input-2"
+                          placeholder="Full Number ( incl. prefix )" required>
+                      </div>
+                    </div>
+                    <div class="mb-3 py-3 px-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                      <textarea class="form-control" placeholder="Enter Message" id="js-input-2" required
+                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class=" form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="checkbox">
+                      <label class="form-check-label" for="checkbox">I agree to receive communications from
+                        FinLab.</label>
+                    </div>
 
                 </div>
                 <div class="modal-footer p-5 d-flex justify-content-start">
                   <button type="button" class="btn span-bg-color-2 px-5 py-2 rounded-0 text-white">Send Message</button>
                 </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <!-- /MODAL -->
+
 
         <div>
           <!-- CARD -->
@@ -229,28 +219,126 @@
         </div>
 
         <div>
-          <button class="btn btn-light rounded-circle d-inline-block d-xl-none d-lg-inline-block d-md-inline-block"
-            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26"
-              fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-            </svg></button>
 
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              ...
+          <!-----------------------Offcanvas media query-------------------------->
+          <div>
+            <!-------------------------Offcanvas trigger button dropdown menu-->
+            <button class="d-xl-none  btn btn-light rounded-circle" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg></button>
+            <!-------------------------------------Offcanvas body dropdown menu----------------------->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <!------------------------------Home section--------------------------->
+              <div class="offcanvas-body">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Homepage
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li><a class="link-dark text-decoration-none" href="">
+                              Home 1</a></li>
+                          <li><a class="link-dark text-decoration-none" href="">
+                              Home 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!----------------------------Who We Are section------------>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Who We Are
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-unstyled py-1">
+                          <li><a class="link-dark text-decoration-none py-1" href="#">About Us</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Our Leadership Team</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Why Choose Us</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Our History</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-----------------------------------What We Do section----------->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What We Do
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-unstyled ">
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Accounting Services</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Audit & Tax Services</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Capital Investments</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Finance & Restructuring</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Financial Consultant</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Portfolio Management</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">Technology Advisory</a></li>
+                          <li><a class="link-dark text-decoration-none py-1" href="#">All Service Page</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------Case Studies--------------------->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Case Studies
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled text-decoration-none  ">
+                        <li><a class="link-dark text-decoration-none" href="#">Case Grid 1</a></li>
+                        <li><a class="link-dark text-decoration-none" href="#">Case Grid 2</a></li>
+                        <li><a class="link-dark text-decoration-none" href="#">Case Grid 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <a class="text-decoration-none link-dark " href="">Blog & Insights</a> </div>
+                <div>
+                  <a class="text-decoration-none link-dark" href="">Shop</a></div>
+                <div>
+                  <a class="text-decoration-none link-dark" href="">Contact Us</a></div>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
     </div>
 
 
@@ -419,7 +507,7 @@
   <!-- OFF-CANVAS -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header d-flex justify-content-end">
-      <button type="button" class="btn-close text-reset" style="background-color: #2cbc63; opacity: 1;"
+      <button type="button" class="btn-close text-reset " style="background-color: #2cbc63; opacity: 1;"
         data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -437,20 +525,19 @@
         <br> <span class="span-color-1">Mail:</span> <span class="span-color-2"> info@example.com </span>
       </div>
 
-      <form class="px-4">
+      <form id="form-nav" class="px-4">
         <div class="text mt-5 ">
           <h5 style="font-size: 1em; color: #989ead">Request a callback</h5>
         </div>
         <div class="" style="margin-top: -1em;">
 
-          <label for="exampleInputEmail1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Your Name *">
+          <label for="name-nav" class="form-label"></label>
+          <input type="text" class="form-control" id="name-nav" aria-describedby="emailHelp" placeholder="Your Name *">
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label"></label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number *">
+          <label for="phone-nav" class="form-label"></label>
+          <input type="tel" class="form-control" id="phone-nav" placeholder="Phone Number *">
         </div>
 
         <button type="submit" class="btn mt-1 btn_hover"
@@ -712,15 +799,15 @@
 
         <div class="col-lg-4 col-xl-6 col-md-12 col-sm-12 col-xs-12 mb-1">
           <div class="text-md-start text-center ms-lg-3 text-lg-start">
-            
-            <p class="mb-1 span-color-2 px-1"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-              height="40" fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
-              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-            </svg>   
-            INDUSTRIES WE SERVE 
-          </p> 
-          
-          <p class="fs-1 d-lg-none ">Broad Knowledge
+
+            <p class="mb-1 span-color-2 px-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                fill="#2cbc63" class="bi bi-dot" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              </svg>
+              INDUSTRIES WE SERVE
+            </p>
+
+            <p class="fs-1 d-lg-none ">Broad Knowledge
               Base. Deep Insights.
             </p>
             <p class="bold d-none d-lg-block ">Broad Knowledge
@@ -1192,6 +1279,7 @@
   </footer>
   <!-- /FOOTER -->
 
+  <script src="script.js"></script>
 </body>
 
 </html>
