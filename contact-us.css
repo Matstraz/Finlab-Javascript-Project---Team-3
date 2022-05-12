@@ -108,6 +108,11 @@ a:hover {
     background-color: #2CBC63;
 }
 
+.btn-circle {
+    width: 43px;
+    height: 43px;
+}
+
 
 /* navbar-2 */
 .nav-drop a:hover,

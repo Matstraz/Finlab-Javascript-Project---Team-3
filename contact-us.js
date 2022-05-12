@@ -9,25 +9,31 @@ btnJs.onclick = function(event) {
 }
 
 //modale
-let modButtom = document.querySelector('.btn-js-2')
+let modalForm = document.getElementById('modalForm')
 let modalAnswers = document.querySelectorAll('.js-input-2')
+let modalCheck = document.getElementById('checkbox3')
 
-modButtom.onclick = function (event){
+modalForm.onsubmit = function (event){
     event.preventDefault(event)
     let objModal = {}
     modalAnswers.forEach((element) => objModal[element.id] = element.value);
+    objModal[modalCheck.id] = modalCheck.checked;
     console.log(objModal);
+    modalForm.reset();
 }
 
 //form
-let modButtom2 = document.querySelector('.btn-js-3')
+let modalForm2 = document.getElementById('modalForm2')
 let modalAnswers2 = document.querySelectorAll('.js-input-3')
+let modalCheck2 = document.getElementById('flexCheckChecked')
 
-modButtom2.onclick = function (event){
+modalForm2.onsubmit = function (event){
     event.preventDefault(event)
     let objModal2 = {}
     modalAnswers2.forEach((element) => objModal2[element.id] = element.value);
+    objModal2[modalCheck2.id] = modalCheck2.checked;
     console.log(objModal2);
+    modalForm2.reset();
 }
 
 //cookies
@@ -37,12 +43,12 @@ let yesCookies = document.querySelector('.yesCookies')
 let noCookies = document.querySelector('.noCookies')
 
 cookiesButton.onclick = function(event){
-    event.preventDefault(event)
+    event.preventDefault(event);
     if(yesCookies.checked == true){
-        console.log(`${yesCookies.id}: ${yesCookies.value}`)
-        cookiesBox.classList.add('d-none')
+        console.log(`${yesCookies.id}: ${yesCookies.value}`);
+        cookiesBox.classList.add('d-none');
     }else if(noCookies.checked == true){
-        console.log(`${noCookies.id}: ${noCookies.value}`)
-        cookiesBox.classList.add('d-none')
+        console.log(`${noCookies.id}: ${noCookies.value}`);
+        cookiesBox.classList.add('d-none');
     }
 }
